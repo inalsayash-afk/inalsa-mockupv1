@@ -78,6 +78,15 @@
       before: 'Current page shown as a grey number with a thin underline.',
       after: 'Current page is a red filled circle with white bold number; other numbers get a light red circle on hover.',
       where: 'Collection pages with more than one page'
+    },
+    {
+      id: 'V1-10',
+      title: 'Phones: compact horizontal product rows',
+      mq: '(max-width: 749px)',
+      selector: '#product-grid .card-wrapper.product-card-wrapper',
+      before: 'On phones each product card is huge: big image on top, one product per screen.',
+      after: 'Image on the left, title, price and full-width Add to Cart on the right, so several products fit on one screen.',
+      where: 'Phones only (under 750px wide), collection pages. Open the site on a phone or narrow the browser to see it.'
     }
   ];
 
@@ -112,7 +121,7 @@
   function get() { try { return sessionStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
   function set(v) { try { sessionStorage.setItem(KEY, v ? '1' : '0'); } catch (e) {} }
   function visible(n) { var r = n.getBoundingClientRect(); return r.width > 4 && r.height > 4; }
-  function matches(c) { try { return Array.prototype.filter.call(document.querySelectorAll(c.selector), visible); } catch (e) { return []; } }
+  function matches(c) { if (c.mq && !(window.matchMedia && matchMedia(c.mq).matches)) return []; try { return Array.prototype.filter.call(document.querySelectorAll(c.selector), visible); } catch (e) { return []; } }
 
   var on = false, btn, panel, layer, timer;
 

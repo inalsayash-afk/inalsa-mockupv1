@@ -217,3 +217,42 @@
   border-top: 0;
   border-radius: 0 0 16px 16px;
 }
+
+/* === V1-10  Phones: collection product cards become compact horizontal rows ======= */
+/* image on the left (~38%), title / price / full-width Add to Cart stacked on the right,
+   instead of one huge card per screen */
+@media (max-width: 749px) {
+  #product-grid { row-gap: 12px; }
+  #product-grid .card-wrapper.product-card-wrapper {
+    padding: 10px;
+    border-radius: 12px;
+    height: auto;
+  }
+  #product-grid .card-wrapper.product-card-wrapper:hover { transform: none; }
+  #product-grid .card-wrapper.product-card-wrapper > .card {
+    display: grid !important;
+    grid-template-columns: 38% minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: start;
+  }
+  #product-grid .card-wrapper.product-card-wrapper > .card > .card__inner { grid-column: 1; grid-row: 1; }
+  #product-grid .card-wrapper.product-card-wrapper > .card > .card__content {
+    grid-column: 2; grid-row: 1;
+    display: flex; flex-direction: column; min-width: 0; padding: 0;
+  }
+  #product-grid .card-wrapper.product-card-wrapper .card__heading,
+  #product-grid .card-wrapper.product-card-wrapper .card__heading a {
+    font-size: 14px; line-height: 1.35; margin: 0;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  #product-grid .card-wrapper.product-card-wrapper .card-information { margin-top: 8px; }
+  #product-grid .card-wrapper.product-card-wrapper .price-add-to-cart {
+    display: flex; flex-direction: column; align-items: stretch; gap: 8px;
+  }
+  #product-grid .card-wrapper.product-card-wrapper .price { font-size: 13px; }
+  #product-grid .card-wrapper.product-card-wrapper .price-item--sale,
+  #product-grid .card-wrapper.product-card-wrapper .price-item--regular { font-size: 15px; }
+  #product-grid .card-wrapper.product-card-wrapper .quick-add,
+  #product-grid .card-wrapper.product-card-wrapper .quick-add__submit { width: 100%; }
+  #product-grid .card-wrapper.product-card-wrapper .quick-add__submit { min-height: 40px; font-size: 14px; }
+}
