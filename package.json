@@ -1,0 +1,15 @@
+{
+  "name": "inalsa-mockup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static mockup of the INALSA Shopify storefront, for team review before agency handoff",
+  "scripts": {
+    "clone": "node --env-file=.env clone.mjs",
+    "preview": "npx --yes serve site"
+  },
+  "dependencies": {
+    "playwright-core": "^1.48.0"
+  },
+  "engines": { "node": ">=20.6" }
+}
