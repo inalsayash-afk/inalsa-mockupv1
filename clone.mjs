@@ -9,8 +9,10 @@ import crypto from 'node:crypto';
 const ORIGIN = 'https://inalsa-appliances.myshopify.com';
 const PASSWORD = process.env.STORE_PASSWORD;
 const OUT = 'site';
-const PRODUCTS_PER_COLLECTION = 2; // product pages auto-discovered from each collection
-const SEED = [
+const IMG_MAX_WIDTH = 1400; // images are saved at most this wide (keeps the repo small)
+const CONCURRENCY = 8;      // parallel downloads
+const SEED = [ // always fetched; every other page is discovered from the store's sitemap
+ 
   '/', '/collections', '/collections/air-fryer', '/collections/floor-care',
   '/collections/best-seller', '/collections/garment-steamer',
   '/pages/about-us', '/pages/contact-us', '/pages/store-locator', '/pages/book-a-demo',
@@ -28,6 +30,11 @@ const DROP_INLINE = /trekkie|ShopifyAnalytics|shopifyPerfKit|web-pixels-manager|
 const ASSET_RE = /(?:(?:https?:)?\/\/(?:inalsa-appliances\.myshopify\.com\/cdn\/|cdn\.shopify\.com\/|fonts\.shopifycdn\.com\/)|(?<=["'(=\s])\/cdn\/)[^\s"'()<>,\\]+/g;
 
 const ctx = await request.newContext({ extraHTTPHeaders: { 'User-Agent': 'Mozilla/5.0 (mockup-cloner)' } });
+let active = 0; const queue = [];
+const limited = (fn) => new Promise((res, rej) => {
+  const run = async () => { active++; try { res(await fn()); } catch (e) { rej(e); } finally { active--; queue.shift()?.(); } };
+  active < CONCURRENCY ? run() : queue.push(run);
+});
 const cache = new Map(); // absolute url -> local file name
 
 async function replaceAsync(str, re, fn) {
@@ -61,7 +68,13 @@ async function rewriteCss(css, cssUrl) {
 // Image size variants (?width=…) all map to one full-size file, so each image is downloaded once.
 function normalise(u) {
   const x = new URL(u);
-  if (/\.(jpe?g|png|webp|gif|avif|svg)$/i.test(x.pathname)) for (const k of ['width', 'height', 'crop']) x.searchParams.delete(k);
+  x.hash = ''; // font references like Calibri.svg#Calibri
+  if (/\.(jpe?g|png|webp|avif)$/i.test(x.pathname)) {
+    for (const k of ['width', 'height', 'crop']) x.searchParams.delete(k);
+    if (/\/(files|products)\//.test(x.pathname)) x.searchParams.set('width', String(IMG_MAX_WIDTH));
+  } else if (/\.(gif|svg)$/i.test(x.pathname)) {
+    for (const k of ['width', 'height', 'crop']) x.searchParams.delete(k);
+  }
   return x.href;
 }
 
@@ -72,9 +85,11 @@ async function grab(raw, base = ORIGIN) {
   const name = crypto.createHash('sha1').update(u).digest('hex').slice(0, 10) + ext;
   cache.set(u, name); // set early so circular refs cannot loop
   try {
-    const r = await ctx.get(u);
-    if (!r.ok()) { console.warn('  skip', r.status(), u); return name; }
-    let body = await r.body();
+    const get = () => limited(async () => { const r = await ctx.get(u); return { ok: r.ok(), status: r.status(), body: r.ok() ? await r.body() : null }; });
+    let r = await get();
+    if (!r.ok && r.status >= 500) r = await get();
+    if (!r.ok) { console.warn('  skip', r.status, u); return name; }
+    let body = r.body;
     if (ext === '.css') body = Buffer.from(await rewriteCss(body.toString('utf8'), u));
     await fs.writeFile(path.join(OUT, 'assets', name), body);
   } catch (e) {
@@ -105,12 +120,35 @@ async function load(p) {
   raw.set(p, await r.text());
   console.log('fetched', p);
 }
-for (const p of SEED) await load(p);
-for (const p of SEED.filter((x) => x.startsWith('/collections/'))) {
-  const html = raw.get(p) ?? '';
-  const hrefs = [...new Set([...html.matchAll(/href="(\/products\/[^"?#]+)/g)].map((m) => m[1]))].slice(0, PRODUCTS_PER_COLLECTION);
-  for (const h of hrefs) if (!raw.has(h)) await load(h);
+async function discover() {
+  const paths = new Set(SEED);
+  const keep = (url) => {
+    const pth = new URL(url.replace(/&amp;/g, '&')).pathname.replace(/\/+$/, '');
+    if (/^\/(products|collections|pages|blogs)\/[^/]+/.test(pth) || pth === '/collections') paths.add(pth);
+  };
+  const locs = (xml) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  try {
+    const idx = await (await ctx.get(ORIGIN + '/sitemap.xml')).text();
+    for (const loc of locs(idx)) {
+      if (/\.xml/.test(loc)) {
+        const u = new URL(loc.replace(/&amp;/g, '&'));
+        for (const l of locs(await (await ctx.get(ORIGIN + u.pathname + u.search)).text())) keep(l);
+      } else keep(loc);
+    }
+  } catch (e) { console.warn('sitemap failed:', e.message); }
+  if (![...paths].some((p) => p.startsWith('/products/'))) { // fallback: public JSON feed
+    for (let n = 1; n <= 20; n++) {
+      const r = await ctx.get(`${ORIGIN}/products.json?limit=250&page=${n}`);
+      const items = r.ok() ? (await r.json()).products ?? [] : [];
+      if (!items.length) break;
+      items.forEach((it) => paths.add('/products/' + it.handle));
+    }
+  }
+  return [...paths];
 }
+const all = await discover();
+console.log(`Discovered ${all.length} pages (${all.filter((x) => x.startsWith('/products/')).length} products, ${all.filter((x) => x.startsWith('/collections/')).length} collections)`);
+await Promise.all(all.map((p) => limited(() => load(p))));
 
 // ---- 2. clean, localise, and write each page
 await fs.mkdir(path.join(OUT, 'assets'), { recursive: true });
@@ -136,6 +174,7 @@ for (const [p, original] of raw) {
     let target;
     if (dec.startsWith(ORIGIN) || (dec.startsWith('/') && !dec.startsWith('//'))) target = new URL(dec, ORIGIN).pathname.replace(/\/+$/, '') || '/';
     else return m; // external link, leave as is
+    target = target.replace(/^\/collections\/[^/]+(\/products\/.+)$/, '$1'); // /collections/x/products/y -> /products/y
     return raw.has(target) ? `href=${q}${prefix}${pageFile(target)}${q}` : `href=${q}#${q}`;
   });
 

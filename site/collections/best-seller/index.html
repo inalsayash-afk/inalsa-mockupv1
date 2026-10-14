@@ -93,7 +93,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
   window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
 </script>
-<script id="__st">var __st={"a":71736131649,"offset":-14400,"reqid":"4d1ac0a3-a1b9-497e-b816-c6940a6c83a8-1791962478","pageurl":"inalsa-appliances.myshopify.com\/collections\/best-seller","u":"199609fc3a36","p":"collection","rtyp":"collection","rid":324329865281};</script>
+<script id="__st">var __st={"a":71736131649,"offset":-14400,"reqid":"3826b37b-64dc-4d20-b72f-a4b300d1553c-1791963529","pageurl":"inalsa-appliances.myshopify.com\/collections\/best-seller","u":"42cdb595d8a1","p":"collection","rtyp":"collection","rid":324329865281};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='../../assets/975e44f91c.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 
@@ -592,7 +592,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 
 
 
-<meta name="shopify-y" content="7b4173f2-f203-402d-b0c7-32d900a31280" data-expiration="1823520076000"><meta name="shopify-s" content="92f7cc86-2a53-410c-a91f-03412f98dd15" data-expiration="1791964276000">
+<meta name="shopify-y" content="98f652b3-32a5-48d2-86d4-9ff16c3b0488" data-expiration="1823521127000"><meta name="shopify-s" content="aa9ebb2f-e4db-4d36-8b7c-06d081944ed2" data-expiration="1791965327000">
 <meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="../../overrides.css"></head>
 
   <body class="gradient">
@@ -931,7 +931,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-otg-oven-toaster-griller"
-                                              href="#"
+                                              href="../../collections/otg-oven-toaster-griller/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -940,7 +940,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-induction-cooker"
-                                              href="#"
+                                              href="../../collections/induction-cooker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -949,7 +949,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-sandwich-maker"
-                                              href="#"
+                                              href="../../collections/sandwich-maker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -958,7 +958,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-food-steamer"
-                                              href="#"
+                                              href="../../collections/food-steamer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -967,7 +967,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-food-processor"
-                                              href="#"
+                                              href="../../collections/food-processor/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -976,7 +976,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-mixer-grinder"
-                                              href="#"
+                                              href="../../collections/mixer-grinder/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -985,7 +985,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-juicer"
-                                              href="#"
+                                              href="../../collections/juicer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -994,7 +994,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-hand-blender"
-                                              href="#"
+                                              href="../../collections/hand-blender/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1003,7 +1003,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-mini-chopper"
-                                              href="#"
+                                              href="../../collections/mini-chopper/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1012,7 +1012,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-stand-mixer"
-                                              href="#"
+                                              href="../../collections/stand-mixer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1021,7 +1021,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-coffee-maker"
-                                              href="#"
+                                              href="../../collections/coffee-maker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1030,7 +1030,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-electric-kettle"
-                                              href="#"
+                                              href="../../collections/electric-kettle/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1039,7 +1039,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-cookware"
-                                              href="#"
+                                              href="../../collections/cookware/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1081,7 +1081,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-steam-iron"
-                                              href="#"
+                                              href="../../collections/steam-iron/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1090,7 +1090,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-electric-iron"
-                                              href="#"
+                                              href="../../collections/electric-iron/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1108,7 +1108,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-pressure-washer"
-                                              href="#"
+                                              href="../../collections/pressure-washer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1150,7 +1150,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-canister-vacuums"
-                                              href="#"
+                                              href="../../collections/canister-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1159,7 +1159,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-wet-dry-vacuums"
-                                              href="#"
+                                              href="../../collections/wet-dry-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1168,7 +1168,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-bagged-vacuums"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1177,7 +1177,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-bagless-vacuums"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1186,7 +1186,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-stick-vacuums"
-                                              href="#"
+                                              href="../../collections/stick-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1195,7 +1195,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-handheld-vacuums"
-                                              href="#"
+                                              href="../../collections/handheld-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1204,7 +1204,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-robotic-vacuum-cleaner"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1246,7 +1246,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-cooktop-chimney-cooktop"
-                                              href="#"
+                                              href="../../collections/cooktop/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1255,7 +1255,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-cooktop-chimney-chimney"
-                                              href="#"
+                                              href="../../collections/chimney/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1297,7 +1297,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-others-room-heater"
-                                              href="#"
+                                              href="../../collections/room-heater/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1306,7 +1306,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-ceiling-fan"
-                                              href="#"
+                                              href="../../collections/ceiling-fan/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1315,7 +1315,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-geyser"
-                                              href="#"
+                                              href="../../collections/geyser/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1324,7 +1324,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-weighing-scale"
-                                              href="#"
+                                              href="../../collections/weighing-scale/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1333,7 +1333,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-refurbished"
-                                              href="#"
+                                              href="../../collections/other/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1342,7 +1342,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-spare-parts"
-                                              href="#"
+                                              href="../../collections/spare-parts/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1504,7 +1504,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 </header-drawer>
 <a href="../../index.html" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper">
             
-            <img src="../../assets/6f1e7153f7.png" alt="Inalsa Appliances" srcset="../../assets/6f1e7153f7.png 130w, ../../assets/6f1e7153f7.png 195w, ../../assets/6f1e7153f7.png 260w" width="130" height="65.0" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 260px) 50vw, 130px">
+            <img src="../../assets/f5334c08ef.png" alt="Inalsa Appliances" srcset="../../assets/f5334c08ef.png 130w, ../../assets/f5334c08ef.png 195w, ../../assets/f5334c08ef.png 260w" width="130" height="65.0" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 260px) 50vw, 130px">
           </div></a><nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
 <li><header-menu>
@@ -1526,7 +1526,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                   ><li>
                         <a
                           id="HeaderMenu-shop-kitchen-appliances"
-                          href="#"
+                          href="../../collections/kitchen-appliances/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1543,7 +1543,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-otg-oven-toaster-griller"
-                                  href="#"
+                                  href="../../collections/otg-oven-toaster-griller/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1552,7 +1552,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-induction-cooker"
-                                  href="#"
+                                  href="../../collections/induction-cooker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1561,7 +1561,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-sandwich-maker"
-                                  href="#"
+                                  href="../../collections/sandwich-maker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1570,7 +1570,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-food-steamer"
-                                  href="#"
+                                  href="../../collections/food-steamer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1579,7 +1579,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-food-processor"
-                                  href="#"
+                                  href="../../collections/food-processor/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1588,7 +1588,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-mixer-grinder"
-                                  href="#"
+                                  href="../../collections/mixer-grinder/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1597,7 +1597,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-juicer"
-                                  href="#"
+                                  href="../../collections/juicer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1606,7 +1606,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-hand-blender"
-                                  href="#"
+                                  href="../../collections/hand-blender/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1615,7 +1615,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-mini-chopper"
-                                  href="#"
+                                  href="../../collections/mini-chopper/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1624,7 +1624,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-stand-mixer"
-                                  href="#"
+                                  href="../../collections/stand-mixer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1633,7 +1633,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-coffee-maker"
-                                  href="#"
+                                  href="../../collections/coffee-maker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1642,7 +1642,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-electric-kettle"
-                                  href="#"
+                                  href="../../collections/electric-kettle/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1651,7 +1651,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-cookware"
-                                  href="#"
+                                  href="../../collections/cookware/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1660,7 +1660,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-garment-seamer"
-                          href="#"
+                          href="../../collections/garment-steamers/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1668,7 +1668,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-steam-iron"
-                                  href="#"
+                                  href="../../collections/steam-iron/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1677,7 +1677,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-electric-iron"
-                                  href="#"
+                                  href="../../collections/electric-iron/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1695,7 +1695,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-pressure-washer"
-                                  href="#"
+                                  href="../../collections/pressure-washer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1712,7 +1712,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-canister-vacuums"
-                                  href="#"
+                                  href="../../collections/canister-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1721,7 +1721,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-wet-dry-vacuums"
-                                  href="#"
+                                  href="../../collections/wet-dry-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1730,7 +1730,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-bagged-vacuums"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1739,7 +1739,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-bagless-vacuums"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1748,7 +1748,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-stick-vacuums"
-                                  href="#"
+                                  href="../../collections/stick-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1757,7 +1757,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-handheld-vacuums"
-                                  href="#"
+                                  href="../../collections/handheld-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1766,7 +1766,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-robotic-vacuum-cleaner"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1775,7 +1775,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-cooktop-chimney"
-                          href="#"
+                          href="../../collections/cooktop-chimney/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1783,7 +1783,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-cooktop-chimney-cooktop"
-                                  href="#"
+                                  href="../../collections/cooktop/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1792,7 +1792,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-cooktop-chimney-chimney"
-                                  href="#"
+                                  href="../../collections/chimney/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1801,7 +1801,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-others"
-                          href="#"
+                          href="../../collections/other/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1809,7 +1809,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-others-room-heater"
-                                  href="#"
+                                  href="../../collections/room-heater/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1818,7 +1818,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-ceiling-fan"
-                                  href="#"
+                                  href="../../collections/ceiling-fan/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1827,7 +1827,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-geyser"
-                                  href="#"
+                                  href="../../collections/geyser/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1836,7 +1836,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-weighing-scale"
-                                  href="#"
+                                  href="../../collections/weighing-scale/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1845,7 +1845,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-refurbished"
-                                  href="#"
+                                  href="../../collections/other/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1854,7 +1854,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-spare-parts"
-                                  href="#"
+                                  href="../../collections/spare-parts/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -5186,9 +5186,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/f1f52b1832.jpg 165w,../../assets/f1f52b1832.jpg 360w,../../assets/f1f52b1832.jpg 533w,../../assets/f1f52b1832.jpg 720w,../../assets/f1f52b1832.jpg 940w,../../assets/f1f52b1832.jpg 1066w,../../assets/f1f52b1832.jpg 1200w
+                  srcset="../../assets/373e24e4e5.jpg 165w,../../assets/373e24e4e5.jpg 360w,../../assets/373e24e4e5.jpg 533w,../../assets/373e24e4e5.jpg 720w,../../assets/373e24e4e5.jpg 940w,../../assets/373e24e4e5.jpg 1066w,../../assets/373e24e4e5.jpg 1200w
                   "
-                  src="../../assets/f1f52b1832.jpg"
+                  src="../../assets/373e24e4e5.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Double Basket Air Fryer 2800W &amp; 14 L (7L+7L) Large Capacity |Non Toxic, BPA Free|PFOA Food Safety Certified|Cook 2 Full Meals Together|Flip Digital Screen|NutriFry DuoSlim"
                   class="motion-reduce"
@@ -5334,9 +5334,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/9c0da92b0e.jpg 165w,../../assets/9c0da92b0e.jpg 360w,../../assets/9c0da92b0e.jpg 533w,../../assets/9c0da92b0e.jpg 720w,../../assets/9c0da92b0e.jpg 940w,../../assets/9c0da92b0e.jpg 1066w,../../assets/9c0da92b0e.jpg 1200w
+                  srcset="../../assets/544c2e9be8.jpg 165w,../../assets/544c2e9be8.jpg 360w,../../assets/544c2e9be8.jpg 533w,../../assets/544c2e9be8.jpg 720w,../../assets/544c2e9be8.jpg 940w,../../assets/544c2e9be8.jpg 1066w,../../assets/544c2e9be8.jpg 1200w
                   "
-                  src="../../assets/9c0da92b0e.jpg"
+                  src="../../assets/544c2e9be8.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Stainless Steel Air Fryer, 5.5 ltr &amp; 1600 W, Non Toxic, SteelChef DW5.5"
                   class="motion-reduce"
@@ -5482,9 +5482,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/ae013a9260.jpg 165w,../../assets/ae013a9260.jpg 360w,../../assets/ae013a9260.jpg 533w,../../assets/ae013a9260.jpg 720w,../../assets/ae013a9260.jpg 940w,../../assets/ae013a9260.jpg 1066w,../../assets/ae013a9260.jpg 1200w
+                  srcset="../../assets/744f3f428d.jpg 165w,../../assets/744f3f428d.jpg 360w,../../assets/744f3f428d.jpg 533w,../../assets/744f3f428d.jpg 720w,../../assets/744f3f428d.jpg 940w,../../assets/744f3f428d.jpg 1066w,../../assets/744f3f428d.jpg 1200w
                   "
-                  src="../../assets/ae013a9260.jpg"
+                  src="../../assets/744f3f428d.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Wet and Dry Vacuum Cleaner for Home, 21 LTR Capacity, 1500 W, 21 KPa Suction, Blower Function, HEPA Filter, Wet Vacuum Cleaner for Sofa, Metal Telescopic Tube, Heavy Duty(WD 21), Yellow"
                   class="motion-reduce"
@@ -5632,9 +5632,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/491bef41b2.jpg 165w,../../assets/491bef41b2.jpg 360w,../../assets/491bef41b2.jpg 533w,../../assets/491bef41b2.jpg 720w,../../assets/491bef41b2.jpg 940w,../../assets/491bef41b2.jpg 1066w,../../assets/491bef41b2.jpg 1200w
+                  srcset="../../assets/c3edf73ead.jpg 165w,../../assets/c3edf73ead.jpg 360w,../../assets/c3edf73ead.jpg 533w,../../assets/c3edf73ead.jpg 720w,../../assets/c3edf73ead.jpg 940w,../../assets/c3edf73ead.jpg 1066w,../../assets/c3edf73ead.jpg 1200w
                   "
-                  src="../../assets/491bef41b2.jpg"
+                  src="../../assets/c3edf73ead.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Wet and Dry Vacuum Cleaner for Home, 20 LTR Capacity, 1400 W, 20 kPa Suction, Blower Function, HEPA Filter, Wet Vacuum Cleaner for Sofa, Metal Telescopic Tube, SS Body, Heavy Duty (Micro WD20)"
                   class="motion-reduce"
@@ -5782,9 +5782,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/022eadb59d.jpg 165w,../../assets/022eadb59d.jpg 360w,../../assets/022eadb59d.jpg 533w,../../assets/022eadb59d.jpg 720w,../../assets/022eadb59d.jpg 940w,../../assets/022eadb59d.jpg 1066w,../../assets/022eadb59d.jpg 1200w
+                  srcset="../../assets/f5fa1d4e73.jpg 165w,../../assets/f5fa1d4e73.jpg 360w,../../assets/f5fa1d4e73.jpg 533w,../../assets/f5fa1d4e73.jpg 720w,../../assets/f5fa1d4e73.jpg 940w,../../assets/f5fa1d4e73.jpg 1066w,../../assets/f5fa1d4e73.jpg 1200w
                   "
-                  src="../../assets/022eadb59d.jpg"
+                  src="../../assets/f5fa1d4e73.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Wet and Dry Vacuum Cleaner for Home, 15 LTR Capacity, 1400 W, 17 kPa Suction, Blower Function, HEPA Filter, Wet Vacuum Cleaner for Sofa, House Cleaning Machine, Stainless Steel Body (Micro WD15)"
                   class="motion-reduce"
@@ -5803,7 +5803,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-8ad86e/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083654017089"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083654017089 NoMediaStandardBadge-template--20564831404097__product-grid-8083654017089"
@@ -5825,7 +5825,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-8ad86e/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083654017089"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083654017089 Badge-template--20564831404097__product-grid-8083654017089"
@@ -5932,9 +5932,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/f749596274.jpg 165w,../../assets/f749596274.jpg 360w,../../assets/f749596274.jpg 533w,../../assets/f749596274.jpg 720w,../../assets/f749596274.jpg 940w,../../assets/f749596274.jpg 1066w,../../assets/f749596274.jpg 1200w
+                  srcset="../../assets/249c471109.jpg 165w,../../assets/249c471109.jpg 360w,../../assets/249c471109.jpg 533w,../../assets/249c471109.jpg 720w,../../assets/249c471109.jpg 940w,../../assets/249c471109.jpg 1066w,../../assets/249c471109.jpg 1200w
                   "
-                  src="../../assets/f749596274.jpg"
+                  src="../../assets/249c471109.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Wet and Dry Vacuum Cleaner for Home, 12 LTR Capacity, 1200 W, 17 kPa Suction, Blower Function, Wet Vacuum Cleaner for Sofa, House Cleaning Machine, Stainless Steel Body (WD 12)"
                   class="motion-reduce"
@@ -5953,7 +5953,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-d144cd/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653951553"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653951553 NoMediaStandardBadge-template--20564831404097__product-grid-8083653951553"
@@ -5975,7 +5975,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-d144cd/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653951553"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653951553 Badge-template--20564831404097__product-grid-8083653951553"
@@ -6082,9 +6082,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/c1934b7a49.jpg 165w,../../assets/c1934b7a49.jpg 360w,../../assets/c1934b7a49.jpg 533w,../../assets/c1934b7a49.jpg 720w,../../assets/c1934b7a49.jpg 940w,../../assets/c1934b7a49.jpg 1066w,../../assets/c1934b7a49.jpg 1500w
+                  srcset="../../assets/e2d54dab7c.jpg 165w,../../assets/e2d54dab7c.jpg 360w,../../assets/e2d54dab7c.jpg 533w,../../assets/e2d54dab7c.jpg 720w,../../assets/e2d54dab7c.jpg 940w,../../assets/e2d54dab7c.jpg 1066w,../../assets/e2d54dab7c.jpg 1500w
                   "
-                  src="../../assets/c1934b7a49.jpg"
+                  src="../../assets/e2d54dab7c.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Wet and Dry Vacuum Cleaner for Home, 10 LTR Capacity, 1200 W, 17 kPa Suction, Blower Function, Wet Vacuum Cleaner for Sofa, House Cleaning Machine, Vaccine Cleaner for Home (Micro WD10)"
                   class="motion-reduce"
@@ -6103,7 +6103,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-f00d3c/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653886017"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653886017 NoMediaStandardBadge-template--20564831404097__product-grid-8083653886017"
@@ -6125,7 +6125,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-f00d3c/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653886017"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653886017 Badge-template--20564831404097__product-grid-8083653886017"
@@ -6232,9 +6232,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/e664e96f05.jpg 165w,../../assets/e664e96f05.jpg 360w,../../assets/e664e96f05.jpg 533w,../../assets/e664e96f05.jpg 720w,../../assets/e664e96f05.jpg 940w,../../assets/e664e96f05.jpg 1066w,../../assets/e664e96f05.jpg 1200w
+                  srcset="../../assets/8a9802f33b.jpg 165w,../../assets/8a9802f33b.jpg 360w,../../assets/8a9802f33b.jpg 533w,../../assets/8a9802f33b.jpg 720w,../../assets/8a9802f33b.jpg 940w,../../assets/8a9802f33b.jpg 1066w,../../assets/8a9802f33b.jpg 1200w
                   "
-                  src="../../assets/e664e96f05.jpg"
+                  src="../../assets/8a9802f33b.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Vacuum Cleaner Wet and Dry Heavy Duty 1700 W &amp; 25 Ltr Capacity|22KPA Suction|HEPA Filter &amp; Metal Telescopic Tube|2 Year Warranty|SS Metal Tank|For Home, Office, Hotel Cleaning (Master Vac 25)"
                   class="motion-reduce"
@@ -6253,7 +6253,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-vacuum-cleaner-wet-and-dry-heavy-2160f9/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653754945"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653754945 NoMediaStandardBadge-template--20564831404097__product-grid-8083653754945"
@@ -6275,7 +6275,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-vacuum-cleaner-wet-and-dry-heavy-2160f9/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653754945"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653754945 Badge-template--20564831404097__product-grid-8083653754945"
@@ -6382,9 +6382,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/425bd7abac.jpg 165w,../../assets/425bd7abac.jpg 360w,../../assets/425bd7abac.jpg 533w,../../assets/425bd7abac.jpg 720w,../../assets/425bd7abac.jpg 940w,../../assets/425bd7abac.jpg 1066w,../../assets/425bd7abac.jpg 1200w
+                  srcset="../../assets/7d3460005f.jpg 165w,../../assets/7d3460005f.jpg 360w,../../assets/7d3460005f.jpg 533w,../../assets/7d3460005f.jpg 720w,../../assets/7d3460005f.jpg 940w,../../assets/7d3460005f.jpg 1066w,../../assets/7d3460005f.jpg 1200w
                   "
-                  src="../../assets/425bd7abac.jpg"
+                  src="../../assets/7d3460005f.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Wet and Dry Vacuum Cleaner for Home, 35 LTR Capacity, 1700 W, 22 kPa Suction, Blower Function, 2Yr Warranty, HEPA Filter, House Cleaning Machine, Industrial Vacuum Cleaner Heavy Duty (Master Vac 35)"
                   class="motion-reduce"
@@ -6403,7 +6403,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-bc82a4/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653689409"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653689409 NoMediaStandardBadge-template--20564831404097__product-grid-8083653689409"
@@ -6425,7 +6425,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-wet-and-dry-vacuum-cleaner-for-ho-bc82a4/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653689409"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653689409 Badge-template--20564831404097__product-grid-8083653689409"
@@ -6532,9 +6532,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/0d370d9972.jpg 165w,../../assets/0d370d9972.jpg 360w,../../assets/0d370d9972.jpg 533w,../../assets/0d370d9972.jpg 720w,../../assets/0d370d9972.jpg 940w,../../assets/0d370d9972.jpg 1066w,../../assets/0d370d9972.jpg 1200w
+                  srcset="../../assets/7aa17a4276.jpg 165w,../../assets/7aa17a4276.jpg 360w,../../assets/7aa17a4276.jpg 533w,../../assets/7aa17a4276.jpg 720w,../../assets/7aa17a4276.jpg 940w,../../assets/7aa17a4276.jpg 1066w,../../assets/7aa17a4276.jpg 1200w
                   "
-                  src="../../assets/0d370d9972.jpg"
+                  src="../../assets/7aa17a4276.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Vacuum Cleaner Wet and Dry Heavy Duty 1700 W &amp; 25 Ltr Capacity|22KPA Suction|HEPA Filter &amp; Metal Telescopic Tube|2 Year Warranty|SS Metal Tank|For Home, Office, Hotel Cleaning (Master Vac 25)"
                   class="motion-reduce"
@@ -6553,7 +6553,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-vacuum-cleaner-wet-and-dry-heavy-7a8521/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653623873"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653623873 NoMediaStandardBadge-template--20564831404097__product-grid-8083653623873"
@@ -6575,7 +6575,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-vacuum-cleaner-wet-and-dry-heavy-7a8521/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653623873"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653623873 Badge-template--20564831404097__product-grid-8083653623873"
@@ -6682,9 +6682,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/e7bab8c543.jpg 165w,../../assets/e7bab8c543.jpg 360w,../../assets/e7bab8c543.jpg 533w,../../assets/e7bab8c543.jpg 720w,../../assets/e7bab8c543.jpg 940w,../../assets/e7bab8c543.jpg 1066w,../../assets/e7bab8c543.jpg 1200w
+                  srcset="../../assets/18fcdb6b34.jpg 165w,../../assets/18fcdb6b34.jpg 360w,../../assets/18fcdb6b34.jpg 533w,../../assets/18fcdb6b34.jpg 720w,../../assets/18fcdb6b34.jpg 940w,../../assets/18fcdb6b34.jpg 1066w,../../assets/18fcdb6b34.jpg 1200w
                   "
-                  src="../../assets/e7bab8c543.jpg"
+                  src="../../assets/18fcdb6b34.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Vacuum Cleaner for Home Spruce-1200W| with Blower Function| Reusable Cloth dust Bag| Multiple Accessories | Dust Full Indicator | 2 Year Warranty (Red/Black)"
                   class="motion-reduce"
@@ -6703,7 +6703,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-vacuum-cleaner-for-home-spruce-12-51cff3/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653328961"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653328961 NoMediaStandardBadge-template--20564831404097__product-grid-8083653328961"
@@ -6725,7 +6725,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-vacuum-cleaner-for-home-spruce-12-51cff3/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653328961"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653328961 Badge-template--20564831404097__product-grid-8083653328961"
@@ -6832,9 +6832,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/cb4d933a21.jpg 165w,../../assets/cb4d933a21.jpg 360w,../../assets/cb4d933a21.jpg 533w,../../assets/cb4d933a21.jpg 720w,../../assets/cb4d933a21.jpg 940w,../../assets/cb4d933a21.jpg 1066w,../../assets/cb4d933a21.jpg 1200w
+                  srcset="../../assets/e850bfc037.jpg 165w,../../assets/e850bfc037.jpg 360w,../../assets/e850bfc037.jpg 533w,../../assets/e850bfc037.jpg 720w,../../assets/e850bfc037.jpg 940w,../../assets/e850bfc037.jpg 1066w,../../assets/e850bfc037.jpg 1200w
                   "
-                  src="../../assets/cb4d933a21.jpg"
+                  src="../../assets/e850bfc037.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Vacuum Cleaner for Home Use|700W Motor &amp; 14Kpa Suction|Hepa Filter for Deep Cleaning| 2-in-1 Handheld &amp; Stick Vacuum Cleaner| Floor Cleaner Machine Clean Under Bed, Sofa &amp; Pet Hairs (Ozoy Plus)"
                   class="motion-reduce"
@@ -6853,7 +6853,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-vacuum-cleaner-for-home-use-700w-452f0e/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653099585"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653099585 NoMediaStandardBadge-template--20564831404097__product-grid-8083653099585"
@@ -6875,7 +6875,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-vacuum-cleaner-for-home-use-700w-452f0e/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653099585"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653099585 Badge-template--20564831404097__product-grid-8083653099585"
@@ -6982,9 +6982,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/4d8d97b65b.jpg 165w,../../assets/4d8d97b65b.jpg 360w,../../assets/4d8d97b65b.jpg 533w,../../assets/4d8d97b65b.jpg 720w,../../assets/4d8d97b65b.jpg 940w,../../assets/4d8d97b65b.jpg 1066w,../../assets/4d8d97b65b.jpg 1200w
+                  srcset="../../assets/2722baeec6.jpg 165w,../../assets/2722baeec6.jpg 360w,../../assets/2722baeec6.jpg 533w,../../assets/2722baeec6.jpg 720w,../../assets/2722baeec6.jpg 940w,../../assets/2722baeec6.jpg 1066w,../../assets/2722baeec6.jpg 1200w
                   "
-                  src="../../assets/4d8d97b65b.jpg"
+                  src="../../assets/2722baeec6.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Vacuum Cleaner with Mop for Floor Cleaning| 800 W Motor with Strong 16 KPA Suction|Electric Mop|5 Level Efficient Filtration|Handheld Vacuum Cleaner for Home (Ozoy Mop Plus), Black"
                   class="motion-reduce"
@@ -7003,7 +7003,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-vacuum-cleaner-with-mop-for-floor-55c5f7/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653034049"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083653034049 NoMediaStandardBadge-template--20564831404097__product-grid-8083653034049"
@@ -7025,7 +7025,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-vacuum-cleaner-with-mop-for-floor-55c5f7/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083653034049"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083653034049 Badge-template--20564831404097__product-grid-8083653034049"
@@ -7132,9 +7132,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/4288fd9447.jpg 165w,../../assets/4288fd9447.jpg 360w,../../assets/4288fd9447.jpg 533w,../../assets/4288fd9447.jpg 720w,../../assets/4288fd9447.jpg 940w,../../assets/4288fd9447.jpg 1066w,../../assets/4288fd9447.jpg 1200w
+                  srcset="../../assets/1754ee0715.jpg 165w,../../assets/1754ee0715.jpg 360w,../../assets/1754ee0715.jpg 533w,../../assets/1754ee0715.jpg 720w,../../assets/1754ee0715.jpg 940w,../../assets/1754ee0715.jpg 1066w,../../assets/1754ee0715.jpg 1200w
                   "
-                  src="../../assets/4288fd9447.jpg"
+                  src="../../assets/1754ee0715.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Handheld Vacum Cleaner for Home&amp;Car 700W High Powerful Motor with Strong Powerful 14Kpa Suction Hepa Filter Portable Light Weight Small, Mini Size Multiple Accessories(Ozoy), 800 Ml, 5 Count"
                   class="motion-reduce"
@@ -7153,7 +7153,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-handheld-vacum-cleaner-for-home-c-12a23f/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083652804673"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083652804673 NoMediaStandardBadge-template--20564831404097__product-grid-8083652804673"
@@ -7175,7 +7175,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-handheld-vacum-cleaner-for-home-c-12a23f/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083652804673"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083652804673 Badge-template--20564831404097__product-grid-8083652804673"
@@ -7282,9 +7282,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/51c7db78e0.jpg 165w,../../assets/51c7db78e0.jpg 360w,../../assets/51c7db78e0.jpg 533w,../../assets/51c7db78e0.jpg 720w,../../assets/51c7db78e0.jpg 940w,../../assets/51c7db78e0.jpg 1066w,../../assets/51c7db78e0.jpg 1200w
+                  srcset="../../assets/84e0730939.jpg 165w,../../assets/84e0730939.jpg 360w,../../assets/84e0730939.jpg 533w,../../assets/84e0730939.jpg 720w,../../assets/84e0730939.jpg 940w,../../assets/84e0730939.jpg 1066w,../../assets/84e0730939.jpg 1200w
                   "
-                  src="../../assets/51c7db78e0.jpg"
+                  src="../../assets/84e0730939.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Vacuum Cleaner for Home 1400W Bagless -Eco Cyclone Pro|HEPA Filter|18 kPa Powerful Suction &amp; High Energy Efficiency|5m Power Cord with Auto Cord Re-Winder|2 L Dust Collector (Red/Grey)"
                   class="motion-reduce"
@@ -7303,7 +7303,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-vacuum-cleaner-for-home-1400w-bag-85d7fd/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083652706369"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083652706369 NoMediaStandardBadge-template--20564831404097__product-grid-8083652706369"
@@ -7325,7 +7325,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-vacuum-cleaner-for-home-1400w-bag-85d7fd/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083652706369"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083652706369 Badge-template--20564831404097__product-grid-8083652706369"
@@ -7432,9 +7432,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/29f2deb33b.jpg 165w,../../assets/29f2deb33b.jpg 360w,../../assets/29f2deb33b.jpg 533w,../../assets/29f2deb33b.jpg 720w,../../assets/29f2deb33b.jpg 940w,../../assets/29f2deb33b.jpg 1066w,../../assets/29f2deb33b.jpg 1254w
+                  srcset="../../assets/4436249fc8.jpg 165w,../../assets/4436249fc8.jpg 360w,../../assets/4436249fc8.jpg 533w,../../assets/4436249fc8.jpg 720w,../../assets/4436249fc8.jpg 940w,../../assets/4436249fc8.jpg 1066w,../../assets/4436249fc8.jpg 1254w
                   "
-                  src="../../assets/29f2deb33b.jpg"
+                  src="../../assets/4436249fc8.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA CleanMaster 12 Wet &amp; Dry Vacuum Cleaner | 1200W High Power | 17 kPa Powerful Suction | 12L Stainless Steel Tank | Blower Function | Advanced Filtration | Overheat Protection | 1 Year Warranty"
                   class="motion-reduce"
@@ -7453,7 +7453,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-cleanmaster-12-wet-dry-vacuum-cle-0b3ba5/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083652411457"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083652411457 NoMediaStandardBadge-template--20564831404097__product-grid-8083652411457"
@@ -7475,7 +7475,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-cleanmaster-12-wet-dry-vacuum-cle-0b3ba5/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083652411457"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083652411457 Badge-template--20564831404097__product-grid-8083652411457"
@@ -7714,7 +7714,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                           class="footer-block__image-wrapper"
                           style="max-width: min(100%, 150px);"
                         >
-                          <img src="../../assets/118436c15f.jpg" alt="" srcset="../../assets/118436c15f.jpg 50w, ../../assets/118436c15f.jpg 100w, ../../assets/118436c15f.jpg 150w, ../../assets/118436c15f.jpg 200w, ../../assets/118436c15f.jpg 300w, ../../assets/118436c15f.jpg 400w, ../../assets/118436c15f.jpg 550w, ../../assets/118436c15f.jpg 800w, ../../assets/118436c15f.jpg 1100w" width="150" height="53.5031847133758" loading="lazy">
+                          <img src="../../assets/366fbfada5.jpg" alt="" srcset="../../assets/366fbfada5.jpg 50w, ../../assets/366fbfada5.jpg 100w, ../../assets/366fbfada5.jpg 150w, ../../assets/366fbfada5.jpg 200w, ../../assets/366fbfada5.jpg 300w, ../../assets/366fbfada5.jpg 400w, ../../assets/366fbfada5.jpg 550w, ../../assets/366fbfada5.jpg 800w, ../../assets/366fbfada5.jpg 1100w" width="150" height="53.5031847133758" loading="lazy">
                         </div><div class="rte"><p>Trusted by Indian households since 1967.<br/>Part of the Taurus Group with global<br/>presence in 70+ countries.</p></div><h2 class="footer-block__heading inline-richtext list-social__link_heading">Follow us on</h2>
 
 <ul class="list-unstyled list-social footer__list-social" role="list"><li class="list-social__item">
@@ -7806,7 +7806,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/privacy-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Privacy Policy
@@ -7827,35 +7827,35 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/e-waste-management-compliance/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               E-Waste
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/csr-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               CSR
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/annual-report/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Annual Report 
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/code-of-conduct/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Code of Conduct
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/meet-the-team/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Meet the Team
@@ -7869,14 +7869,14 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               ><h2 class="footer-block__heading inline-richtext">OUR PRODUCTS</h2><ul class="footer-block__details-content list-unstyled"><li>
                             <a
-                              href="#"
+                              href="../../collections/food-processor/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Food Processors
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../collections/juicer/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Juicer Mixer Grinder
@@ -7904,7 +7904,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../collections/hand-blender/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Hand Blenders
@@ -7939,28 +7939,28 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/dead-on-arrival-doa-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               DOA Policy
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/return-refund/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Return &amp; Refund
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/terms-of-use/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Terms of Use
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/market-circulation-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Market Circulation Policy
@@ -8182,7 +8182,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
           >
             
               <a
-                href="#"
+                href="../../collections/frontpage/index.html"
                 class=""
               >
             

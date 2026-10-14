@@ -1,1 +1,219 @@
 /* Mockup-only CSS changes go here. Loaded last on every page. */
+
+/* === V1-01  Bordered product cards + hover lift (all product grids site-wide) === */
+.product-grid { gap: 20px; padding-top: 8px; padding-bottom: 24px; }
+.product-grid.grid--4-col-desktop, .product-grid.grid--3-col-desktop { column-gap: 20px; row-gap: 20px; }
+.card-wrapper.product-card-wrapper {
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  padding: 14px 14px 16px;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card-wrapper.product-card-wrapper:hover {
+  border-color: #cfcfcf;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .12);
+}
+.card-wrapper.product-card-wrapper .card__inner,
+.card-wrapper.product-card-wrapper .card__media,
+.card-wrapper.product-card-wrapper .media { background: #fff; }
+.card-wrapper.product-card-wrapper .card__media img { object-fit: contain; padding: 8px; }
+.card-wrapper.product-card-wrapper .card__content { padding-left: 0; padding-right: 0; }
+
+/* Category cards on /collections get the same outline + lift */
+.collection-card-wrapper .card {
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.collection-card-wrapper:hover .card {
+  border-color: #cfcfcf;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .12);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-wrapper.product-card-wrapper, .collection-card-wrapper .card { transition: none; }
+  .card-wrapper.product-card-wrapper:hover, .collection-card-wrapper:hover .card { transform: none; }
+}
+
+/* === V1-02  Product page: bordered image gallery + info card ================= */
+.product__media-wrapper .product-media-container {
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+}
+.product__media-wrapper .thumbnail { border-radius: 10px; overflow: hidden; }
+.product__info-container {
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  padding: 24px 28px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+  box-sizing: border-box;
+}
+@media (max-width: 749px) { .product__info-container { padding: 16px; } }
+
+/* === V1-03  Product page: tinted + outlined trust-badge strip ================ */
+.usp-section-wrapper {
+  background: #fdf0ea;
+  border: 1px solid #f1b3a2;
+  border-radius: 10px;
+  padding: 14px 10px;
+  box-sizing: border-box;
+}
+
+/* === V1-04  Product page: spec table with grid lines ========================= */
+.product-specs {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.product-specs__row {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  border-top: 1px solid #d9d9d9;
+}
+.product-specs__row:first-child { border-top: 0; }
+.product-specs__label { margin: 0; padding: 12px 14px; border-right: 1px solid #d9d9d9; }
+.product-specs__value { margin: 0; padding: 12px 14px; }
+
+/* === V1-05  Homepage marquees (category icons + "Backed by Taurus Spain"): auto-move AND can be scrolled/dragged === */
+:is([id^="concern-marquee-"][id$="__image_slider_Naj8LX"], [id^="concern-marquee-"][id$="__image_slider_yBHBqj"]) {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+:is([id^="concern-marquee-"][id$="__image_slider_Naj8LX"], [id^="concern-marquee-"][id$="__image_slider_yBHBqj"])::-webkit-scrollbar { display: none; }
+:is([id^="concern-marquee-"][id$="__image_slider_Naj8LX"], [id^="concern-marquee-"][id$="__image_slider_yBHBqj"]) .concern-marquee-track {
+  animation: none !important;  /* movement is now driven by overrides.js so scrolling and autoplay don't fight */
+  transform: none !important;
+}
+:is([id^="concern-marquee-"][id$="__image_slider_Naj8LX"], [id^="concern-marquee-"][id$="__image_slider_yBHBqj"]).is-dragging { cursor: grabbing; user-select: none; }
+:is([id^="concern-marquee-"][id$="__image_slider_Naj8LX"], [id^="concern-marquee-"][id$="__image_slider_yBHBqj"]) img { -webkit-user-drag: none; user-select: none; }
+
+/* === V1-06  "Backed by Taurus Spain": stat tiles become bordered, lifting boxes ===== */
+[id^="concern-marquee-"][id$="__image_slider_yBHBqj"] { padding: 12px 8px 26px; }
+[id^="concern-marquee-"][id$="__image_slider_yBHBqj"] .concern-card {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  padding: 22px 12px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+[id^="concern-marquee-"][id$="__image_slider_yBHBqj"] .concern-card:hover {
+  border-color: #cfcfcf;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .12);
+}
+@media (prefers-reduced-motion: reduce) { [id^="concern-marquee-"][id$="__image_slider_yBHBqj"] .concern-card { transition: none; } [id^="concern-marquee-"][id$="__image_slider_yBHBqj"] .concern-card:hover { transform: none; } }
+
+/* === V1-07  Homepage "Shop by Trend": bordered cards, hover lift + image zoom, red CTA === */
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-grid-item { display: flex; }
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-card:hover {
+  border-color: #cfcfcf;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .12);
+}
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-card:focus-within { outline: 2px solid #DA251C; outline-offset: 3px; }
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-image { overflow: hidden; background: #fff; }
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-image img { display: block; width: 100%; transition: transform .5s ease; }
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-card:hover .concern-image img { transform: scale(1.04); }
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-title {
+  margin: 0;
+  padding: 16px 14px 4px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+[id$="__image_slider_86VexC"] .shop-by-trend .description {
+  margin: 0;
+  padding: 0 14px 18px;
+  background: #fff;
+  text-align: center;
+  color: #DA251C;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-card:hover .description { text-decoration: underline; text-underline-offset: 4px; }
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-link { position: absolute; inset: 0; z-index: 2; }
+@media (prefers-reduced-motion: reduce) {
+  [id$="__image_slider_86VexC"] .shop-by-trend .concern-card, [id$="__image_slider_86VexC"] .shop-by-trend .concern-image img { transition: none; }
+  [id$="__image_slider_86VexC"] .shop-by-trend .concern-card:hover, [id$="__image_slider_86VexC"] .shop-by-trend .concern-card:hover .concern-image img { transform: none; }
+}
+
+/* === V1-08  Uniform product-card size: every image box is square, rows line up ===== */
+/* The theme sizes each card's image box from that product's photo shape (--ratio-percent
+   ranges from 66% to 153%), so tall/wide photos made some cards much bigger. Force 1:1. */
+.card-wrapper.product-card-wrapper .card,
+.card-wrapper.product-card-wrapper .card__inner { --ratio-percent: 100% !important; }
+.card-wrapper.product-card-wrapper .card__media .media img {
+  object-fit: contain !important;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+/* equal-height cards; price + Add to Cart pinned to the bottom of each card */
+.product-grid > .grid__item { display: flex; }
+.product-grid > .grid__item > product-component { display: flex; width: 100%; }
+.card-wrapper.product-card-wrapper { display: flex; flex-direction: column; width: 100%; }
+.card-wrapper.product-card-wrapper > .card { flex: 1 1 auto; display: flex; flex-direction: column; }
+.card-wrapper.product-card-wrapper > .card > .card__content { flex: 1 1 auto; display: flex; flex-direction: column; }
+.card-wrapper.product-card-wrapper .card__information { flex: 1 1 auto; display: flex; flex-direction: column; }
+.card-wrapper.product-card-wrapper .card-information { margin-top: auto; }
+
+/* === V1-09  Pagination: current page = red filled circle ========================== */
+.pagination__list { gap: 6px; align-items: center; }
+.pagination__item {
+  width: 40px; height: 40px; min-width: 40px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+}
+.pagination__item:not(.pagination__item--current):not(.pagination__item-arrow):hover {
+  background: #fdecea; color: #DA251C; text-decoration: none;
+}
+.pagination__item--current,
+.pagination__item[aria-current="page"] {
+  background: #DA251C !important;
+  color: #fff !important;
+  font-weight: 700;
+  opacity: 1 !important;
+  box-shadow: 0 4px 10px rgba(218, 37, 28, .3);
+}
+.pagination__item--current::after,
+.pagination__item[aria-current="page"]::after,
+.pagination__item:hover::after { display: none !important; }
+
+/* V1-07 (tweak): Shop by Trend cards have no top border line - sides and bottom only */
+[id$="__image_slider_86VexC"] .shop-by-trend .concern-card {
+  border-top: 0;
+  border-radius: 0 0 16px 16px;
+}

@@ -95,7 +95,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
   window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
 </script>
-<script id="__st">var __st={"a":71736131649,"offset":-14400,"reqid":"f8a11165-4542-4a1d-911f-c3e1044e62ba-1791962477","pageurl":"inalsa-appliances.myshopify.com\/collections\/air-fryer","u":"ee7057e28e89","p":"collection","rtyp":"collection","rid":312548425793};</script>
+<script id="__st">var __st={"a":71736131649,"offset":-14400,"reqid":"93fa2c6c-ff84-44b4-9c97-ac6df9c742d7-1791963529","pageurl":"inalsa-appliances.myshopify.com\/collections\/air-fryer","u":"cfaa8fb8ff9a","p":"collection","rtyp":"collection","rid":312548425793};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='../../assets/975e44f91c.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 
@@ -594,7 +594,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 
 
 
-<meta name="shopify-y" content="7b4173f2-f203-402d-b0c7-32d900a31280" data-expiration="1823520076000"><meta name="shopify-s" content="92f7cc86-2a53-410c-a91f-03412f98dd15" data-expiration="1791964276000">
+<meta name="shopify-y" content="98f652b3-32a5-48d2-86d4-9ff16c3b0488" data-expiration="1823521127000"><meta name="shopify-s" content="aa9ebb2f-e4db-4d36-8b7c-06d081944ed2" data-expiration="1791965327000">
 <meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="../../overrides.css"></head>
 
   <body class="gradient">
@@ -935,7 +935,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-otg-oven-toaster-griller"
-                                              href="#"
+                                              href="../../collections/otg-oven-toaster-griller/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -944,7 +944,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-induction-cooker"
-                                              href="#"
+                                              href="../../collections/induction-cooker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -953,7 +953,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-sandwich-maker"
-                                              href="#"
+                                              href="../../collections/sandwich-maker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -962,7 +962,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-food-steamer"
-                                              href="#"
+                                              href="../../collections/food-steamer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -971,7 +971,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-food-processor"
-                                              href="#"
+                                              href="../../collections/food-processor/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -980,7 +980,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-mixer-grinder"
-                                              href="#"
+                                              href="../../collections/mixer-grinder/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -989,7 +989,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-juicer"
-                                              href="#"
+                                              href="../../collections/juicer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -998,7 +998,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-hand-blender"
-                                              href="#"
+                                              href="../../collections/hand-blender/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1007,7 +1007,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-mini-chopper"
-                                              href="#"
+                                              href="../../collections/mini-chopper/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1016,7 +1016,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-stand-mixer"
-                                              href="#"
+                                              href="../../collections/stand-mixer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1025,7 +1025,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-coffee-maker"
-                                              href="#"
+                                              href="../../collections/coffee-maker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1034,7 +1034,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-electric-kettle"
-                                              href="#"
+                                              href="../../collections/electric-kettle/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1043,7 +1043,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-cookware"
-                                              href="#"
+                                              href="../../collections/cookware/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1085,7 +1085,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-steam-iron"
-                                              href="#"
+                                              href="../../collections/steam-iron/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1094,7 +1094,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-electric-iron"
-                                              href="#"
+                                              href="../../collections/electric-iron/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1112,7 +1112,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-pressure-washer"
-                                              href="#"
+                                              href="../../collections/pressure-washer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1154,7 +1154,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-canister-vacuums"
-                                              href="#"
+                                              href="../../collections/canister-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1163,7 +1163,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-wet-dry-vacuums"
-                                              href="#"
+                                              href="../../collections/wet-dry-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1172,7 +1172,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-bagged-vacuums"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1181,7 +1181,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-bagless-vacuums"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1190,7 +1190,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-stick-vacuums"
-                                              href="#"
+                                              href="../../collections/stick-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1199,7 +1199,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-handheld-vacuums"
-                                              href="#"
+                                              href="../../collections/handheld-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1208,7 +1208,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-robotic-vacuum-cleaner"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1250,7 +1250,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-cooktop-chimney-cooktop"
-                                              href="#"
+                                              href="../../collections/cooktop/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1259,7 +1259,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-cooktop-chimney-chimney"
-                                              href="#"
+                                              href="../../collections/chimney/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1301,7 +1301,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-others-room-heater"
-                                              href="#"
+                                              href="../../collections/room-heater/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1310,7 +1310,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-ceiling-fan"
-                                              href="#"
+                                              href="../../collections/ceiling-fan/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1319,7 +1319,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-geyser"
-                                              href="#"
+                                              href="../../collections/geyser/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1328,7 +1328,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-weighing-scale"
-                                              href="#"
+                                              href="../../collections/weighing-scale/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1337,7 +1337,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-refurbished"
-                                              href="#"
+                                              href="../../collections/other/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1346,7 +1346,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-spare-parts"
-                                              href="#"
+                                              href="../../collections/spare-parts/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1508,7 +1508,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 </header-drawer>
 <a href="../../index.html" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper">
             
-            <img src="../../assets/6f1e7153f7.png" alt="Inalsa Appliances" srcset="../../assets/6f1e7153f7.png 130w, ../../assets/6f1e7153f7.png 195w, ../../assets/6f1e7153f7.png 260w" width="130" height="65.0" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 260px) 50vw, 130px">
+            <img src="../../assets/f5334c08ef.png" alt="Inalsa Appliances" srcset="../../assets/f5334c08ef.png 130w, ../../assets/f5334c08ef.png 195w, ../../assets/f5334c08ef.png 260w" width="130" height="65.0" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 260px) 50vw, 130px">
           </div></a><nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
 <li><header-menu>
@@ -1532,7 +1532,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                   ><li>
                         <a
                           id="HeaderMenu-shop-kitchen-appliances"
-                          href="#"
+                          href="../../collections/kitchen-appliances/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1551,7 +1551,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-otg-oven-toaster-griller"
-                                  href="#"
+                                  href="../../collections/otg-oven-toaster-griller/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1560,7 +1560,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-induction-cooker"
-                                  href="#"
+                                  href="../../collections/induction-cooker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1569,7 +1569,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-sandwich-maker"
-                                  href="#"
+                                  href="../../collections/sandwich-maker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1578,7 +1578,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-food-steamer"
-                                  href="#"
+                                  href="../../collections/food-steamer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1587,7 +1587,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-food-processor"
-                                  href="#"
+                                  href="../../collections/food-processor/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1596,7 +1596,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-mixer-grinder"
-                                  href="#"
+                                  href="../../collections/mixer-grinder/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1605,7 +1605,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-juicer"
-                                  href="#"
+                                  href="../../collections/juicer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1614,7 +1614,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-hand-blender"
-                                  href="#"
+                                  href="../../collections/hand-blender/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1623,7 +1623,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-mini-chopper"
-                                  href="#"
+                                  href="../../collections/mini-chopper/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1632,7 +1632,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-stand-mixer"
-                                  href="#"
+                                  href="../../collections/stand-mixer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1641,7 +1641,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-coffee-maker"
-                                  href="#"
+                                  href="../../collections/coffee-maker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1650,7 +1650,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-electric-kettle"
-                                  href="#"
+                                  href="../../collections/electric-kettle/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1659,7 +1659,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-cookware"
-                                  href="#"
+                                  href="../../collections/cookware/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1668,7 +1668,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-garment-seamer"
-                          href="#"
+                          href="../../collections/garment-steamers/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1676,7 +1676,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-steam-iron"
-                                  href="#"
+                                  href="../../collections/steam-iron/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1685,7 +1685,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-electric-iron"
-                                  href="#"
+                                  href="../../collections/electric-iron/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1703,7 +1703,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-pressure-washer"
-                                  href="#"
+                                  href="../../collections/pressure-washer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1720,7 +1720,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-canister-vacuums"
-                                  href="#"
+                                  href="../../collections/canister-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1729,7 +1729,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-wet-dry-vacuums"
-                                  href="#"
+                                  href="../../collections/wet-dry-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1738,7 +1738,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-bagged-vacuums"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1747,7 +1747,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-bagless-vacuums"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1756,7 +1756,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-stick-vacuums"
-                                  href="#"
+                                  href="../../collections/stick-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1765,7 +1765,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-handheld-vacuums"
-                                  href="#"
+                                  href="../../collections/handheld-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1774,7 +1774,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-robotic-vacuum-cleaner"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1783,7 +1783,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-cooktop-chimney"
-                          href="#"
+                          href="../../collections/cooktop-chimney/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1791,7 +1791,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-cooktop-chimney-cooktop"
-                                  href="#"
+                                  href="../../collections/cooktop/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1800,7 +1800,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-cooktop-chimney-chimney"
-                                  href="#"
+                                  href="../../collections/chimney/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1809,7 +1809,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-others"
-                          href="#"
+                          href="../../collections/other/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1817,7 +1817,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-others-room-heater"
-                                  href="#"
+                                  href="../../collections/room-heater/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1826,7 +1826,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-ceiling-fan"
-                                  href="#"
+                                  href="../../collections/ceiling-fan/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1835,7 +1835,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-geyser"
-                                  href="#"
+                                  href="../../collections/geyser/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1844,7 +1844,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-weighing-scale"
-                                  href="#"
+                                  href="../../collections/weighing-scale/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1853,7 +1853,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-refurbished"
-                                  href="#"
+                                  href="../../collections/other/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1862,7 +1862,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-spare-parts"
-                                  href="#"
+                                  href="../../collections/spare-parts/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -4042,9 +4042,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/1561ffbc3d.jpg 165w,../../assets/1561ffbc3d.jpg 360w,../../assets/1561ffbc3d.jpg 533w,../../assets/1561ffbc3d.jpg 720w,../../assets/1561ffbc3d.jpg 940w,../../assets/1561ffbc3d.jpg 1066w,../../assets/1561ffbc3d.jpg 1200w
+                  srcset="../../assets/9d0327875c.jpg 165w,../../assets/9d0327875c.jpg 360w,../../assets/9d0327875c.jpg 533w,../../assets/9d0327875c.jpg 720w,../../assets/9d0327875c.jpg 940w,../../assets/9d0327875c.jpg 1066w,../../assets/9d0327875c.jpg 1200w
                   "
-                  src="../../assets/1561ffbc3d.jpg"
+                  src="../../assets/9d0327875c.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air fryer Oven 1700 W(Air Fryer + Steam)|10-in-1 Preset Air fry, Steam, Roast, Ferment, idli, Momos, Sanitize &amp; More|15 L Large Family Size Capacity|Self Clean Function|2 Yr Warranty, Aero Steam Pro"
                   class="motion-reduce"
@@ -4190,9 +4190,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/4198dbb250.jpg 165w,../../assets/4198dbb250.jpg 360w,../../assets/4198dbb250.jpg 533w,../../assets/4198dbb250.jpg 720w,../../assets/4198dbb250.jpg 940w,../../assets/4198dbb250.jpg 1066w,../../assets/4198dbb250.jpg 1500w
+                  srcset="../../assets/f3af20eb32.jpg 165w,../../assets/f3af20eb32.jpg 360w,../../assets/f3af20eb32.jpg 533w,../../assets/f3af20eb32.jpg 720w,../../assets/f3af20eb32.jpg 940w,../../assets/f3af20eb32.jpg 1066w,../../assets/f3af20eb32.jpg 1500w
                   "
-                  src="../../assets/4198dbb250.jpg"
+                  src="../../assets/f3af20eb32.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air Fryer Oven 30 Ltr, 1800 W, Multi-Cooker, Air Fry, Aero Smart 30"
                   class="motion-reduce"
@@ -4338,9 +4338,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/f1f52b1832.jpg 165w,../../assets/f1f52b1832.jpg 360w,../../assets/f1f52b1832.jpg 533w,../../assets/f1f52b1832.jpg 720w,../../assets/f1f52b1832.jpg 940w,../../assets/f1f52b1832.jpg 1066w,../../assets/f1f52b1832.jpg 1200w
+                  srcset="../../assets/373e24e4e5.jpg 165w,../../assets/373e24e4e5.jpg 360w,../../assets/373e24e4e5.jpg 533w,../../assets/373e24e4e5.jpg 720w,../../assets/373e24e4e5.jpg 940w,../../assets/373e24e4e5.jpg 1066w,../../assets/373e24e4e5.jpg 1200w
                   "
-                  src="../../assets/f1f52b1832.jpg"
+                  src="../../assets/373e24e4e5.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Double Basket Air Fryer 2800W &amp; 14 L (7L+7L) Large Capacity |Non Toxic, BPA Free|PFOA Food Safety Certified|Cook 2 Full Meals Together|Flip Digital Screen|NutriFry DuoSlim"
                   class="motion-reduce"
@@ -4488,9 +4488,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/9c0da92b0e.jpg 165w,../../assets/9c0da92b0e.jpg 360w,../../assets/9c0da92b0e.jpg 533w,../../assets/9c0da92b0e.jpg 720w,../../assets/9c0da92b0e.jpg 940w,../../assets/9c0da92b0e.jpg 1066w,../../assets/9c0da92b0e.jpg 1200w
+                  srcset="../../assets/544c2e9be8.jpg 165w,../../assets/544c2e9be8.jpg 360w,../../assets/544c2e9be8.jpg 533w,../../assets/544c2e9be8.jpg 720w,../../assets/544c2e9be8.jpg 940w,../../assets/544c2e9be8.jpg 1066w,../../assets/544c2e9be8.jpg 1200w
                   "
-                  src="../../assets/9c0da92b0e.jpg"
+                  src="../../assets/544c2e9be8.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Stainless Steel Air Fryer, 5.5 ltr &amp; 1600 W, Non Toxic, SteelChef DW5.5"
                   class="motion-reduce"
@@ -4638,9 +4638,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/80522b5e93.jpg 165w,../../assets/80522b5e93.jpg 360w,../../assets/80522b5e93.jpg 533w,../../assets/80522b5e93.jpg 720w,../../assets/80522b5e93.jpg 940w,../../assets/80522b5e93.jpg 1066w,../../assets/80522b5e93.jpg 1200w
+                  srcset="../../assets/7d06e753d2.jpg 165w,../../assets/7d06e753d2.jpg 360w,../../assets/7d06e753d2.jpg 533w,../../assets/7d06e753d2.jpg 720w,../../assets/7d06e753d2.jpg 940w,../../assets/7d06e753d2.jpg 1066w,../../assets/7d06e753d2.jpg 1200w
                   "
-                  src="../../assets/80522b5e93.jpg"
+                  src="../../assets/7d06e753d2.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Cookware Platinum Triply Sauce Pan with Lid-16cm, 1.75L| Induction Friendly, (Silver), Small"
                   class="motion-reduce"
@@ -4659,7 +4659,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-cookware-platinum-triply-sauce-pa-709c9a/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083640057921"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083640057921"
@@ -4681,7 +4681,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-cookware-platinum-triply-sauce-pa-709c9a/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083640057921"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083640057921"
@@ -4788,9 +4788,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/778e31d0dc.jpg 165w,../../assets/778e31d0dc.jpg 360w,../../assets/778e31d0dc.jpg 533w,../../assets/778e31d0dc.jpg 720w,../../assets/778e31d0dc.jpg 940w,../../assets/778e31d0dc.jpg 1066w,../../assets/778e31d0dc.jpg 1200w
+                  srcset="../../assets/e623da6c96.jpg 165w,../../assets/e623da6c96.jpg 360w,../../assets/e623da6c96.jpg 533w,../../assets/e623da6c96.jpg 720w,../../assets/e623da6c96.jpg 940w,../../assets/e623da6c96.jpg 1066w,../../assets/e623da6c96.jpg 1200w
                   "
-                  src="../../assets/778e31d0dc.jpg"
+                  src="../../assets/e623da6c96.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Stainless Steel Induction Friendly Platinum Triply Sauce Pan with Lid (14cm, 1.25L, Silver, Small)"
                   class="motion-reduce"
@@ -4809,7 +4809,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-stainless-steel-induction-friendl-ceb9c2/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083639992385"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083639992385 NoMediaStandardBadge-template--20564831404097__product-grid-8083639992385"
@@ -4831,7 +4831,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-stainless-steel-induction-friendl-ceb9c2/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083639992385"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083639992385 Badge-template--20564831404097__product-grid-8083639992385"
@@ -4938,9 +4938,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/979a6186a2.jpg 165w,../../assets/979a6186a2.jpg 360w,../../assets/979a6186a2.jpg 533w,../../assets/979a6186a2.jpg 720w,../../assets/979a6186a2.jpg 940w,../../assets/979a6186a2.jpg 1066w,../../assets/979a6186a2.jpg 1200w
+                  srcset="../../assets/343582ed41.jpg 165w,../../assets/343582ed41.jpg 360w,../../assets/343582ed41.jpg 533w,../../assets/343582ed41.jpg 720w,../../assets/343582ed41.jpg 940w,../../assets/343582ed41.jpg 1066w,../../assets/343582ed41.jpg 1200w
                   "
-                  src="../../assets/979a6186a2.jpg"
+                  src="../../assets/343582ed41.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Cookware Platinum Triply Fry Pan-24cm, 2L| Induction Friendly, (Silver), Small"
                   class="motion-reduce"
@@ -4959,7 +4959,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-cookware-platinum-triply-fry-pan-53951f/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083639926849"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083639926849 NoMediaStandardBadge-template--20564831404097__product-grid-8083639926849"
@@ -4981,7 +4981,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-cookware-platinum-triply-fry-pan-53951f/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083639926849"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083639926849 Badge-template--20564831404097__product-grid-8083639926849"
@@ -5088,9 +5088,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/fefdedcd08.jpg 165w,../../assets/fefdedcd08.jpg 360w,../../assets/fefdedcd08.jpg 533w,../../assets/fefdedcd08.jpg 720w,../../assets/fefdedcd08.jpg 940w,../../assets/fefdedcd08.jpg 1066w,../../assets/fefdedcd08.jpg 1200w
+                  srcset="../../assets/52c52454cd.jpg 165w,../../assets/52c52454cd.jpg 360w,../../assets/52c52454cd.jpg 533w,../../assets/52c52454cd.jpg 720w,../../assets/52c52454cd.jpg 940w,../../assets/52c52454cd.jpg 1066w,../../assets/52c52454cd.jpg 1200w
                   "
-                  src="../../assets/fefdedcd08.jpg"
+                  src="../../assets/52c52454cd.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Cookware Platinum Triply Fry Pan-22cm, 1.5L| Induction Friendly, (Silver), Small"
                   class="motion-reduce"
@@ -5109,7 +5109,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-cookware-platinum-triply-fry-pan-ab11de/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083639861313"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083639861313 NoMediaStandardBadge-template--20564831404097__product-grid-8083639861313"
@@ -5131,7 +5131,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-cookware-platinum-triply-fry-pan-ab11de/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083639861313"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083639861313 Badge-template--20564831404097__product-grid-8083639861313"
@@ -5238,9 +5238,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/eac9261ca4.jpg 165w,../../assets/eac9261ca4.jpg 360w,../../assets/eac9261ca4.jpg 533w,../../assets/eac9261ca4.jpg 720w,../../assets/eac9261ca4.jpg 940w,../../assets/eac9261ca4.jpg 1066w,../../assets/eac9261ca4.jpg 1200w
+                  srcset="../../assets/4f9499efc0.jpg 165w,../../assets/4f9499efc0.jpg 360w,../../assets/4f9499efc0.jpg 533w,../../assets/4f9499efc0.jpg 720w,../../assets/4f9499efc0.jpg 940w,../../assets/4f9499efc0.jpg 1066w,../../assets/4f9499efc0.jpg 1200w
                   "
-                  src="../../assets/eac9261ca4.jpg"
+                  src="../../assets/4f9499efc0.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air Fryer Top Chef Digital-1400W, 4L|Smart AirCrisp Technology| 8-Preset, Touch Control &amp; Digital Display| Variable Temp &amp; Time Control|Free Recipe book|2 Yr Warranty (Black)"
                   class="motion-reduce"
@@ -5259,7 +5259,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-air-fryer-top-chef-digital-1400w-2df558/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636748353"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636748353 NoMediaStandardBadge-template--20564831404097__product-grid-8083636748353"
@@ -5281,7 +5281,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-air-fryer-top-chef-digital-1400w-2df558/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636748353"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636748353 Badge-template--20564831404097__product-grid-8083636748353"
@@ -5388,9 +5388,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/032db3fa6f.jpg 165w,../../assets/032db3fa6f.jpg 360w,../../assets/032db3fa6f.jpg 533w,../../assets/032db3fa6f.jpg 720w,../../assets/032db3fa6f.jpg 940w,../../assets/032db3fa6f.jpg 1066w,../../assets/032db3fa6f.jpg 1200w
+                  srcset="../../assets/537b005040.jpg 165w,../../assets/537b005040.jpg 360w,../../assets/537b005040.jpg 533w,../../assets/537b005040.jpg 720w,../../assets/537b005040.jpg 940w,../../assets/537b005040.jpg 1066w,../../assets/537b005040.jpg 1200w
                   "
-                  src="../../assets/032db3fa6f.jpg"
+                  src="../../assets/537b005040.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air Fryer 4.5 ltr|1500 W with Air Crisp Technology|Temperature &amp; Timer Control|8 Preset Menu &amp; Digital Display|Air fry, Bake, Roast, Grill|Airfryer Recipe book (Tasty Fry Digital 4.5)"
                   class="motion-reduce"
@@ -5409,7 +5409,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-air-fryer-4-5-ltr-1500-w-with-air-a8a908/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636650049"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636650049 NoMediaStandardBadge-template--20564831404097__product-grid-8083636650049"
@@ -5431,7 +5431,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-air-fryer-4-5-ltr-1500-w-with-air-a8a908/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636650049"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636650049 Badge-template--20564831404097__product-grid-8083636650049"
@@ -5538,9 +5538,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/6195dc76bb.jpg 165w,../../assets/6195dc76bb.jpg 360w,../../assets/6195dc76bb.jpg 533w,../../assets/6195dc76bb.jpg 720w,../../assets/6195dc76bb.jpg 940w,../../assets/6195dc76bb.jpg 1066w,../../assets/6195dc76bb.jpg 1200w
+                  srcset="../../assets/dec6609438.jpg 165w,../../assets/dec6609438.jpg 360w,../../assets/dec6609438.jpg 533w,../../assets/dec6609438.jpg 720w,../../assets/dec6609438.jpg 940w,../../assets/dec6609438.jpg 1066w,../../assets/dec6609438.jpg 1200w
                   "
-                  src="../../assets/6195dc76bb.jpg"
+                  src="../../assets/dec6609438.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air Fryer 4.2 ltr|1400 W with Air Crisp Technology|Temperature &amp; Timer Control|8 Preset Menu &amp; Digital Display|Air fry, Bake, Roast, Reheat, Dehydrate|Airfryer Recipe book (Tasty Fry Digital)"
                   class="motion-reduce"
@@ -5559,7 +5559,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-air-fryer-4-2-ltr-1400-w-with-air-546105/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636584513"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636584513 NoMediaStandardBadge-template--20564831404097__product-grid-8083636584513"
@@ -5581,7 +5581,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-air-fryer-4-2-ltr-1400-w-with-air-546105/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636584513"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636584513 Badge-template--20564831404097__product-grid-8083636584513"
@@ -5688,9 +5688,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/d4bc821684.jpg 165w,../../assets/d4bc821684.jpg 360w,../../assets/d4bc821684.jpg 533w,../../assets/d4bc821684.jpg 720w,../../assets/d4bc821684.jpg 940w,../../assets/d4bc821684.jpg 1066w,../../assets/d4bc821684.jpg 1200w
+                  srcset="../../assets/402a22c664.jpg 165w,../../assets/402a22c664.jpg 360w,../../assets/402a22c664.jpg 533w,../../assets/402a22c664.jpg 720w,../../assets/402a22c664.jpg 940w,../../assets/402a22c664.jpg 1066w,../../assets/402a22c664.jpg 1200w
                   "
-                  src="../../assets/d4bc821684.jpg"
+                  src="../../assets/402a22c664.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air Fryer 4.2 ltr|1400 W with Air Crisp Technology|Air-Fryer with Window Display|8 Preset Menu &amp; Digital Display|Air fry, Bake, Roast, Reheat, Dehydrate|Airfryer Recipe book (Tasty Fry DW 4.2)"
                   class="motion-reduce"
@@ -5709,7 +5709,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-air-fryer-4-2-ltr-1400-w-with-air-5f9fa8/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636518977"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636518977 NoMediaStandardBadge-template--20564831404097__product-grid-8083636518977"
@@ -5731,7 +5731,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-air-fryer-4-2-ltr-1400-w-with-air-5f9fa8/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636518977"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636518977 Badge-template--20564831404097__product-grid-8083636518977"
@@ -5838,9 +5838,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/321f6b9c50.jpg 165w,../../assets/321f6b9c50.jpg 360w,../../assets/321f6b9c50.jpg 533w,../../assets/321f6b9c50.jpg 720w,../../assets/321f6b9c50.jpg 940w,../../assets/321f6b9c50.jpg 1066w,../../assets/321f6b9c50.jpg 1200w
+                  srcset="../../assets/b2a6d28671.jpg 165w,../../assets/b2a6d28671.jpg 360w,../../assets/b2a6d28671.jpg 533w,../../assets/b2a6d28671.jpg 720w,../../assets/b2a6d28671.jpg 940w,../../assets/b2a6d28671.jpg 1066w,../../assets/b2a6d28671.jpg 1200w
                   "
-                  src="../../assets/321f6b9c50.jpg"
+                  src="../../assets/b2a6d28671.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Air Fryer 5.5 ltr|1400 W with Air Crisp Technology|Air-Fryer with Digital Display|8 Preset Menu &amp; Function Symbols|Air fry, Bake, Roast, Reheat, Dehydrate|Airfryer Recipe book (Tasty Fry D5.5)"
                   class="motion-reduce"
@@ -5859,7 +5859,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-air-fryer-5-5-ltr-1400-w-with-air-5051be/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636420673"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636420673 NoMediaStandardBadge-template--20564831404097__product-grid-8083636420673"
@@ -5881,7 +5881,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-air-fryer-5-5-ltr-1400-w-with-air-5051be/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636420673"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636420673 Badge-template--20564831404097__product-grid-8083636420673"
@@ -5988,9 +5988,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/17ef4e2630.jpg 165w,../../assets/17ef4e2630.jpg 360w,../../assets/17ef4e2630.jpg 533w,../../assets/17ef4e2630.jpg 720w,../../assets/17ef4e2630.jpg 940w,../../assets/17ef4e2630.jpg 1066w,../../assets/17ef4e2630.jpg 1254w
+                  srcset="../../assets/19d6bc45f5.jpg 165w,../../assets/19d6bc45f5.jpg 360w,../../assets/19d6bc45f5.jpg 533w,../../assets/19d6bc45f5.jpg 720w,../../assets/19d6bc45f5.jpg 940w,../../assets/19d6bc45f5.jpg 1066w,../../assets/19d6bc45f5.jpg 1254w
                   "
-                  src="../../assets/17ef4e2630.jpg"
+                  src="../../assets/19d6bc45f5.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Ceramic Air Fryer, 5.5L, 1600W, Non Toxic, AirCrisp Tech, TastyFry CDW5.5"
                   class="motion-reduce"
@@ -6009,7 +6009,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-ceramic-air-fryer-5-5l-1600w-non-68dba4/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636355137"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636355137 NoMediaStandardBadge-template--20564831404097__product-grid-8083636355137"
@@ -6031,7 +6031,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-ceramic-air-fryer-5-5l-1600w-non-68dba4/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636355137"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636355137 Badge-template--20564831404097__product-grid-8083636355137"
@@ -6138,9 +6138,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/166f58f456.jpg 165w,../../assets/166f58f456.jpg 360w,../../assets/166f58f456.jpg 533w,../../assets/166f58f456.jpg 720w,../../assets/166f58f456.jpg 940w,../../assets/166f58f456.jpg 1066w,../../assets/166f58f456.jpg 1200w
+                  srcset="../../assets/396a8b6545.jpg 165w,../../assets/396a8b6545.jpg 360w,../../assets/396a8b6545.jpg 533w,../../assets/396a8b6545.jpg 720w,../../assets/396a8b6545.jpg 940w,../../assets/396a8b6545.jpg 1066w,../../assets/396a8b6545.jpg 1200w
                   "
-                  src="../../assets/166f58f456.jpg"
+                  src="../../assets/396a8b6545.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="INALSA Non -Toxic Ceramic Coated Air fryer 4.5 L&amp; 1400 W Power|No Micro plastics, No PTFE, PFAS, PFOA|Digital Touch Panel, 8 Preset|Air Fryer without Teflon Coating, Tasty FryCD4.5"
                   class="motion-reduce"
@@ -6159,7 +6159,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-non-toxic-ceramic-coated-air-frye-e1ece6/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636256833"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636256833 NoMediaStandardBadge-template--20564831404097__product-grid-8083636256833"
@@ -6181,7 +6181,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-non-toxic-ceramic-coated-air-frye-e1ece6/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636256833"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636256833 Badge-template--20564831404097__product-grid-8083636256833"
@@ -6288,9 +6288,9 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               <div class="media media--transparent media--hover-effect">
                 
                 <img
-                  srcset="../../assets/97b9fac576.jpg 165w,../../assets/97b9fac576.jpg 360w,../../assets/97b9fac576.jpg 533w,../../assets/97b9fac576.jpg 720w,../../assets/97b9fac576.jpg 940w,../../assets/97b9fac576.jpg 1066w,../../assets/97b9fac576.jpg 1200w
+                  srcset="../../assets/8c5a52ae6a.jpg 165w,../../assets/8c5a52ae6a.jpg 360w,../../assets/8c5a52ae6a.jpg 533w,../../assets/8c5a52ae6a.jpg 720w,../../assets/8c5a52ae6a.jpg 940w,../../assets/8c5a52ae6a.jpg 1066w,../../assets/8c5a52ae6a.jpg 1200w
                   "
-                  src="../../assets/97b9fac576.jpg"
+                  src="../../assets/8c5a52ae6a.jpg"
                   sizes="(min-width: 1500px) 342px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="Inalsa Air Fryer For Home|5.5 L Capacity|1600 W With Smart Aircrisp Technology|Quick Heat Circulation|4-In-1 Appliance With 8 Preset Menu &amp; Digital Display, Tasty Fry 5.5, Black"
                   class="motion-reduce"
@@ -6309,7 +6309,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               >
                 <a
-                  href="#"
+                  href="../../products/inalsa-air-fryer-for-home-5-5-l-capacity-ff16c9/index.html"
                   id="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636158529"
                   class="full-unstyled-link"
                   aria-labelledby="StandardCardNoMediaLink-template--20564831404097__product-grid-8083636158529 NoMediaStandardBadge-template--20564831404097__product-grid-8083636158529"
@@ -6331,7 +6331,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
               
             >
               <a
-                href="#"
+                href="../../products/inalsa-air-fryer-for-home-5-5-l-capacity-ff16c9/index.html"
                 id="CardLink-template--20564831404097__product-grid-8083636158529"
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-template--20564831404097__product-grid-8083636158529 Badge-template--20564831404097__product-grid-8083636158529"
@@ -6566,7 +6566,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                           class="footer-block__image-wrapper"
                           style="max-width: min(100%, 150px);"
                         >
-                          <img src="../../assets/118436c15f.jpg" alt="" srcset="../../assets/118436c15f.jpg 50w, ../../assets/118436c15f.jpg 100w, ../../assets/118436c15f.jpg 150w, ../../assets/118436c15f.jpg 200w, ../../assets/118436c15f.jpg 300w, ../../assets/118436c15f.jpg 400w, ../../assets/118436c15f.jpg 550w, ../../assets/118436c15f.jpg 800w, ../../assets/118436c15f.jpg 1100w" width="150" height="53.5031847133758" loading="lazy">
+                          <img src="../../assets/366fbfada5.jpg" alt="" srcset="../../assets/366fbfada5.jpg 50w, ../../assets/366fbfada5.jpg 100w, ../../assets/366fbfada5.jpg 150w, ../../assets/366fbfada5.jpg 200w, ../../assets/366fbfada5.jpg 300w, ../../assets/366fbfada5.jpg 400w, ../../assets/366fbfada5.jpg 550w, ../../assets/366fbfada5.jpg 800w, ../../assets/366fbfada5.jpg 1100w" width="150" height="53.5031847133758" loading="lazy">
                         </div><div class="rte"><p>Trusted by Indian households since 1967.<br/>Part of the Taurus Group with global<br/>presence in 70+ countries.</p></div><h2 class="footer-block__heading inline-richtext list-social__link_heading">Follow us on</h2>
 
 <ul class="list-unstyled list-social footer__list-social" role="list"><li class="list-social__item">
@@ -6658,7 +6658,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/privacy-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Privacy Policy
@@ -6679,35 +6679,35 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/e-waste-management-compliance/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               E-Waste
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/csr-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               CSR
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/annual-report/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Annual Report 
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/code-of-conduct/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Code of Conduct
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/meet-the-team/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Meet the Team
@@ -6721,14 +6721,14 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                 
               ><h2 class="footer-block__heading inline-richtext">OUR PRODUCTS</h2><ul class="footer-block__details-content list-unstyled"><li>
                             <a
-                              href="#"
+                              href="../../collections/food-processor/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Food Processors
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../collections/juicer/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Juicer Mixer Grinder
@@ -6756,7 +6756,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../collections/hand-blender/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Hand Blenders
@@ -6791,28 +6791,28 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/dead-on-arrival-doa-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               DOA Policy
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/return-refund/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Return &amp; Refund
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/terms-of-use/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Terms of Use
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/market-circulation-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Market Circulation Policy
@@ -7034,7 +7034,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
           >
             
               <a
-                href="#"
+                href="../../collections/frontpage/index.html"
                 class=""
               >
             

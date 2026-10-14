@@ -90,7 +90,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
   window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"listener":["modules/v2/loader.listener.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"]};
 </script>
-<script id="__st">var __st={"a":71736131649,"offset":-14400,"reqid":"65622ecd-bcda-49a6-b176-1cddc0806ab3-1791961460","pageurl":"inalsa-appliances.myshopify.com\/pages\/about-us","s":"pages-117344796737","u":"310e5fa9c776","p":"page","rtyp":"page","rid":117344796737};</script>
+<script id="__st">var __st={"a":71736131649,"offset":-14400,"reqid":"ead8156d-b1c0-41e6-ae5b-9e68dedd5600-1791963529","pageurl":"inalsa-appliances.myshopify.com\/pages\/about-us","s":"pages-117344796737","u":"bd31831c8570","p":"page","rtyp":"page","rid":117344796737};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='../../assets/975e44f91c.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 
@@ -589,7 +589,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 
 
 
-<meta name="shopify-y" content="7b4173f2-f203-402d-b0c7-32d900a31280" data-expiration="1823520076000"><meta name="shopify-s" content="92f7cc86-2a53-410c-a91f-03412f98dd15" data-expiration="1791964276000">
+<meta name="shopify-y" content="98f652b3-32a5-48d2-86d4-9ff16c3b0488" data-expiration="1823521127000"><meta name="shopify-s" content="aa9ebb2f-e4db-4d36-8b7c-06d081944ed2" data-expiration="1791965327000">
 <meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="../../overrides.css"></head>
 
   <body class="gradient">
@@ -928,7 +928,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-otg-oven-toaster-griller"
-                                              href="#"
+                                              href="../../collections/otg-oven-toaster-griller/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -937,7 +937,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-induction-cooker"
-                                              href="#"
+                                              href="../../collections/induction-cooker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -946,7 +946,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-sandwich-maker"
-                                              href="#"
+                                              href="../../collections/sandwich-maker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -955,7 +955,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-food-steamer"
-                                              href="#"
+                                              href="../../collections/food-steamer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -964,7 +964,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-food-processor"
-                                              href="#"
+                                              href="../../collections/food-processor/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -973,7 +973,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-mixer-grinder"
-                                              href="#"
+                                              href="../../collections/mixer-grinder/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -982,7 +982,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-juicer"
-                                              href="#"
+                                              href="../../collections/juicer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -991,7 +991,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-hand-blender"
-                                              href="#"
+                                              href="../../collections/hand-blender/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1000,7 +1000,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-mini-chopper"
-                                              href="#"
+                                              href="../../collections/mini-chopper/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1009,7 +1009,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-stand-mixer"
-                                              href="#"
+                                              href="../../collections/stand-mixer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1018,7 +1018,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-coffee-maker"
-                                              href="#"
+                                              href="../../collections/coffee-maker/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1027,7 +1027,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-electric-kettle"
-                                              href="#"
+                                              href="../../collections/electric-kettle/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1036,7 +1036,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-kitchen-appliances-cookware"
-                                              href="#"
+                                              href="../../collections/cookware/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1078,7 +1078,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-steam-iron"
-                                              href="#"
+                                              href="../../collections/steam-iron/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1087,7 +1087,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-electric-iron"
-                                              href="#"
+                                              href="../../collections/electric-iron/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1105,7 +1105,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-garment-seamer-pressure-washer"
-                                              href="#"
+                                              href="../../collections/pressure-washer/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1147,7 +1147,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-canister-vacuums"
-                                              href="#"
+                                              href="../../collections/canister-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1156,7 +1156,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-wet-dry-vacuums"
-                                              href="#"
+                                              href="../../collections/wet-dry-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1165,7 +1165,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-bagged-vacuums"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1174,7 +1174,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-bagless-vacuums"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1183,7 +1183,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-stick-vacuums"
-                                              href="#"
+                                              href="../../collections/stick-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1192,7 +1192,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-handheld-vacuums"
-                                              href="#"
+                                              href="../../collections/handheld-vacuums/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1201,7 +1201,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-floor-care-robotic-vacuum-cleaner"
-                                              href="#"
+                                              href="../../collections/floor-care/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1243,7 +1243,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-cooktop-chimney-cooktop"
-                                              href="#"
+                                              href="../../collections/cooktop/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1252,7 +1252,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-cooktop-chimney-chimney"
-                                              href="#"
+                                              href="../../collections/chimney/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1294,7 +1294,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                       ><li>
                                             <a
                                               id="HeaderDrawer-shop-others-room-heater"
-                                              href="#"
+                                              href="../../collections/room-heater/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1303,7 +1303,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-ceiling-fan"
-                                              href="#"
+                                              href="../../collections/ceiling-fan/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1312,7 +1312,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-geyser"
-                                              href="#"
+                                              href="../../collections/geyser/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1321,7 +1321,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-weighing-scale"
-                                              href="#"
+                                              href="../../collections/weighing-scale/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1330,7 +1330,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-refurbished"
-                                              href="#"
+                                              href="../../collections/other/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1339,7 +1339,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                                           </li><li>
                                             <a
                                               id="HeaderDrawer-shop-others-spare-parts"
-                                              href="#"
+                                              href="../../collections/spare-parts/index.html"
                                               class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                               
                                             >
@@ -1501,7 +1501,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
 </header-drawer>
 <a href="../../index.html" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper">
             
-            <img src="../../assets/6f1e7153f7.png" alt="Inalsa Appliances" srcset="../../assets/6f1e7153f7.png 130w, ../../assets/6f1e7153f7.png 195w, ../../assets/6f1e7153f7.png 260w" width="130" height="65.0" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 260px) 50vw, 130px">
+            <img src="../../assets/f5334c08ef.png" alt="Inalsa Appliances" srcset="../../assets/f5334c08ef.png 130w, ../../assets/f5334c08ef.png 195w, ../../assets/f5334c08ef.png 260w" width="130" height="65.0" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 260px) 50vw, 130px">
           </div></a><nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
 <li><header-menu>
@@ -1523,7 +1523,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                   ><li>
                         <a
                           id="HeaderMenu-shop-kitchen-appliances"
-                          href="#"
+                          href="../../collections/kitchen-appliances/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1540,7 +1540,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-otg-oven-toaster-griller"
-                                  href="#"
+                                  href="../../collections/otg-oven-toaster-griller/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1549,7 +1549,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-induction-cooker"
-                                  href="#"
+                                  href="../../collections/induction-cooker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1558,7 +1558,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-sandwich-maker"
-                                  href="#"
+                                  href="../../collections/sandwich-maker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1567,7 +1567,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-food-steamer"
-                                  href="#"
+                                  href="../../collections/food-steamer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1576,7 +1576,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-food-processor"
-                                  href="#"
+                                  href="../../collections/food-processor/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1585,7 +1585,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-mixer-grinder"
-                                  href="#"
+                                  href="../../collections/mixer-grinder/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1594,7 +1594,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-juicer"
-                                  href="#"
+                                  href="../../collections/juicer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1603,7 +1603,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-hand-blender"
-                                  href="#"
+                                  href="../../collections/hand-blender/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1612,7 +1612,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-mini-chopper"
-                                  href="#"
+                                  href="../../collections/mini-chopper/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1621,7 +1621,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-stand-mixer"
-                                  href="#"
+                                  href="../../collections/stand-mixer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1630,7 +1630,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-coffee-maker"
-                                  href="#"
+                                  href="../../collections/coffee-maker/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1639,7 +1639,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-electric-kettle"
-                                  href="#"
+                                  href="../../collections/electric-kettle/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1648,7 +1648,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-kitchen-appliances-cookware"
-                                  href="#"
+                                  href="../../collections/cookware/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1657,7 +1657,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-garment-seamer"
-                          href="#"
+                          href="../../collections/garment-steamers/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1665,7 +1665,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-steam-iron"
-                                  href="#"
+                                  href="../../collections/steam-iron/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1674,7 +1674,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-electric-iron"
-                                  href="#"
+                                  href="../../collections/electric-iron/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1692,7 +1692,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-garment-seamer-pressure-washer"
-                                  href="#"
+                                  href="../../collections/pressure-washer/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1709,7 +1709,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-canister-vacuums"
-                                  href="#"
+                                  href="../../collections/canister-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1718,7 +1718,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-wet-dry-vacuums"
-                                  href="#"
+                                  href="../../collections/wet-dry-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1727,7 +1727,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-bagged-vacuums"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1736,7 +1736,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-bagless-vacuums"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1745,7 +1745,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-stick-vacuums"
-                                  href="#"
+                                  href="../../collections/stick-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1754,7 +1754,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-handheld-vacuums"
-                                  href="#"
+                                  href="../../collections/handheld-vacuums/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1763,7 +1763,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-floor-care-robotic-vacuum-cleaner"
-                                  href="#"
+                                  href="../../collections/floor-care/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1772,7 +1772,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-cooktop-chimney"
-                          href="#"
+                          href="../../collections/cooktop-chimney/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1780,7 +1780,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-cooktop-chimney-cooktop"
-                                  href="#"
+                                  href="../../collections/cooktop/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1789,7 +1789,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-cooktop-chimney-chimney"
-                                  href="#"
+                                  href="../../collections/chimney/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1798,7 +1798,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li></ul></li><li>
                         <a
                           id="HeaderMenu-shop-others"
-                          href="#"
+                          href="../../collections/other/index.html"
                           class="mega-menu__link mega-menu__link--level-2 link"
                           
                         >
@@ -1806,7 +1806,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                         </a><ul class="list-unstyled" role="list"><li>
                                 <a
                                   id="HeaderMenu-shop-others-room-heater"
-                                  href="#"
+                                  href="../../collections/room-heater/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1815,7 +1815,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-ceiling-fan"
-                                  href="#"
+                                  href="../../collections/ceiling-fan/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1824,7 +1824,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-geyser"
-                                  href="#"
+                                  href="../../collections/geyser/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1833,7 +1833,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-weighing-scale"
-                                  href="#"
+                                  href="../../collections/weighing-scale/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1842,7 +1842,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-refurbished"
-                                  href="#"
+                                  href="../../collections/other/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -1851,7 +1851,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
                               </li><li>
                                 <a
                                   id="HeaderMenu-shop-others-spare-parts"
-                                  href="#"
+                                  href="../../collections/spare-parts/index.html"
                                   class="mega-menu__link link"
                                   
                                 >
@@ -2525,7 +2525,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
     background-position: center;
     background-repeat: no-repeat;
     
-      background-image: url('../../assets/1666e010ba.png');
+      background-image: url('../../assets/3aaa664403.png');
     
   }
 
@@ -2608,7 +2608,7 @@ jdgm.loadCSS(jdgm.CDN_BASE_URL+"widget_base.css"):jdgm.loadCSS(jdgm.CDN_BASE_URL
   
   <div class="page-width inalsa-banner-content">
     
-      <img src="../../assets/47cb0cad78.png" alt="" srcset="../../assets/47cb0cad78.png 352w, ../../assets/47cb0cad78.png 400w" width="400" height="93" loading="lazy" class="inalsa-banner-logo">
+      <img src="../../assets/3961e1cb24.png" alt="" srcset="../../assets/3961e1cb24.png 352w, ../../assets/3961e1cb24.png 400w" width="400" height="93" loading="lazy" class="inalsa-banner-logo">
     
     
     
@@ -3392,17 +3392,17 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/f532b77eec.jpg"
+                        srcset="../../assets/9c24003d13.jpg"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/f532b77eec.jpg"
+                        src="../../assets/9c24003d13.jpg"
                         alt="Food Processors"
                         loading="lazy"
                       >
                     </picture>
                   </div><h3 class="concern-title">Food Processors</h3>
-<a href="#" class="concern-link">
+<a href="../../collections/food-processor/index.html" class="concern-link">
                     <span class="visually-hidden">Shop Food Processors</span>
                   </a></div>
             </div>
@@ -3410,11 +3410,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/58ca2a4cbf.png"
+                        srcset="../../assets/783a0294db.png"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/815be0e657.jpg"
+                        src="../../assets/28dc2bec75.jpg"
                         alt="Air Fryers"
                         loading="lazy"
                       >
@@ -3428,17 +3428,17 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/e2472788da.jpg"
+                        srcset="../../assets/6856ae59ef.jpg"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/e2472788da.jpg"
+                        src="../../assets/6856ae59ef.jpg"
                         alt="Coffee Makers"
                         loading="lazy"
                       >
                     </picture>
                   </div><h3 class="concern-title">Coffee Makers</h3>
-<a href="#" class="concern-link">
+<a href="../../collections/coffee-maker/index.html" class="concern-link">
                     <span class="visually-hidden">Shop Coffee Makers</span>
                   </a></div>
             </div>
@@ -3446,17 +3446,17 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/889b6277c5.png"
+                        srcset="../../assets/1249b6dc58.png"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/cb878f80e2.jpg"
+                        src="../../assets/f0c95afca5.jpg"
                         alt="Electric Kettles"
                         loading="lazy"
                       >
                     </picture>
                   </div><h3 class="concern-title">Electric Kettles</h3>
-<a href="#" class="concern-link">
+<a href="../../collections/electric-kettle/index.html" class="concern-link">
                     <span class="visually-hidden">Shop Electric Kettles</span>
                   </a></div>
             </div>
@@ -3464,11 +3464,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/ea1d4ce2c1.jpg"
+                        srcset="../../assets/83b2967990.jpg"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/ea1d4ce2c1.jpg"
+                        src="../../assets/83b2967990.jpg"
                         alt="Vacuum Cleaners"
                         loading="lazy"
                       >
@@ -3482,11 +3482,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/2a6b2c9ba0.jpg"
+                        srcset="../../assets/ca7a3552a6.jpg"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/2a6b2c9ba0.jpg"
+                        src="../../assets/ca7a3552a6.jpg"
                         alt="Garment Steamers"
                         loading="lazy"
                       >
@@ -3500,17 +3500,17 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/839ab9dd01.jpg"
+                        srcset="../../assets/79ac6a4fa8.jpg"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/839ab9dd01.jpg"
+                        src="../../assets/79ac6a4fa8.jpg"
                         alt="Hand Blenders"
                         loading="lazy"
                       >
                     </picture>
                   </div><h3 class="concern-title">Hand Blenders</h3>
-<a href="#" class="concern-link">
+<a href="../../collections/hand-blender/index.html" class="concern-link">
                     <span class="visually-hidden">Shop Hand Blenders</span>
                   </a></div>
             </div>
@@ -3518,17 +3518,17 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="concern-card "><div class="concern-image">
                     <picture><source
                         media="(max-width: 749px)"
-                        srcset="../../assets/68cf735647.jpg"
+                        srcset="../../assets/e0b86a4ca0.jpg"
                       ><img
                         width=""
                         height=""
-                        src="../../assets/68cf735647.jpg"
+                        src="../../assets/e0b86a4ca0.jpg"
                         alt="Stand Mixers"
                         loading="lazy"
                       >
                     </picture>
                   </div><h3 class="concern-title">Stand Mixers</h3>
-<a href="#" class="concern-link">
+<a href="../../collections/stand-mixer/index.html" class="concern-link">
                     <span class="visually-hidden">Shop Stand Mixers</span>
                   </a></div>
             </div></div></div></div></div>
@@ -4188,7 +4188,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           class="footer-block__image-wrapper"
                           style="max-width: min(100%, 150px);"
                         >
-                          <img src="../../assets/118436c15f.jpg" alt="" srcset="../../assets/118436c15f.jpg 50w, ../../assets/118436c15f.jpg 100w, ../../assets/118436c15f.jpg 150w, ../../assets/118436c15f.jpg 200w, ../../assets/118436c15f.jpg 300w, ../../assets/118436c15f.jpg 400w, ../../assets/118436c15f.jpg 550w, ../../assets/118436c15f.jpg 800w, ../../assets/118436c15f.jpg 1100w" width="150" height="53.5031847133758" loading="lazy">
+                          <img src="../../assets/366fbfada5.jpg" alt="" srcset="../../assets/366fbfada5.jpg 50w, ../../assets/366fbfada5.jpg 100w, ../../assets/366fbfada5.jpg 150w, ../../assets/366fbfada5.jpg 200w, ../../assets/366fbfada5.jpg 300w, ../../assets/366fbfada5.jpg 400w, ../../assets/366fbfada5.jpg 550w, ../../assets/366fbfada5.jpg 800w, ../../assets/366fbfada5.jpg 1100w" width="150" height="53.5031847133758" loading="lazy">
                         </div><div class="rte"><p>Trusted by Indian households since 1967.<br/>Part of the Taurus Group with global<br/>presence in 70+ countries.</p></div><h2 class="footer-block__heading inline-richtext list-social__link_heading">Follow us on</h2>
 
 <ul class="list-unstyled list-social footer__list-social" role="list"><li class="list-social__item">
@@ -4280,7 +4280,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/privacy-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Privacy Policy
@@ -4301,35 +4301,35 @@ document.addEventListener("DOMContentLoaded", () => {
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/e-waste-management-compliance/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               E-Waste
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/csr-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               CSR
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/annual-report/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Annual Report 
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/code-of-conduct/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Code of Conduct
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/meet-the-team/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Meet the Team
@@ -4343,14 +4343,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 
               ><h2 class="footer-block__heading inline-richtext">OUR PRODUCTS</h2><ul class="footer-block__details-content list-unstyled"><li>
                             <a
-                              href="#"
+                              href="../../collections/food-processor/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Food Processors
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../collections/juicer/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Juicer Mixer Grinder
@@ -4378,7 +4378,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../collections/hand-blender/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Hand Blenders
@@ -4413,28 +4413,28 @@ document.addEventListener("DOMContentLoaded", () => {
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/dead-on-arrival-doa-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               DOA Policy
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/return-refund/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Return &amp; Refund
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/terms-of-use/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Terms of Use
                             </a>
                           </li><li>
                             <a
-                              href="#"
+                              href="../../pages/market-circulation-policy/index.html"
                               class="link link--text list-menu__item list-menu__item--link"
                             >
                               Market Circulation Policy
@@ -4656,7 +4656,7 @@ document.addEventListener("DOMContentLoaded", () => {
           >
             
               <a
-                href="#"
+                href="../../collections/frontpage/index.html"
                 class=""
               >
             
