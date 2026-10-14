@@ -87,6 +87,15 @@
       before: 'On phones each product card is huge: big image on top, one product per screen.',
       after: 'Image on the left, title, price and full-width Add to Cart on the right, so several products fit on one screen.',
       where: 'Phones only (under 750px wide), collection pages. Open the site on a phone or narrow the browser to see it.'
+    },
+    {
+      id: 'V1-11',
+      title: 'Phones: no box borders',
+      mq: '(max-width: 749px)',
+      selector: '.product__info-container, #product-grid .card-wrapper.product-card-wrapper, .usp-section-wrapper',
+      before: 'Desktop gets bordered cards, boxes and shadows.',
+      after: 'On phones the borders and shadows are removed everywhere (product cards, product page card and image, trust strip, Taurus tiles, Shop by Trend). Layout and backgrounds stay.',
+      where: 'Phones only (under 750px wide), all pages'
     }
   ];
 

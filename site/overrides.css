@@ -285,3 +285,23 @@
   #product-grid .card-wrapper.product-card-wrapper s.price-item--regular { font-size: 12px; }
   #product-grid .card-wrapper.product-card-wrapper .quick-add__submit { min-height: 36px; font-size: 13px; }
 }
+
+/* === V1-11  Phones: no box borders anywhere (keeps backgrounds / layout) ============= */
+@media (max-width: 749px) {
+  .card-wrapper.product-card-wrapper,
+  #product-grid .card-wrapper.product-card-wrapper,
+  .collection-card-wrapper .card,
+  .product__media-wrapper .product-media-container,
+  .product__info-container,
+  .usp-section-wrapper,
+  [id$="__image_slider_yBHBqj"] .concern-card,
+  [id$="__image_slider_86VexC"] .shop-by-trend .concern-card {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .card-wrapper.product-card-wrapper,
+  #product-grid .card-wrapper.product-card-wrapper { padding: 8px 0 !important; }
+  .product__info-container { padding: 16px 0 !important; }
+  .product-specs { border-left: 0; border-right: 0; border-radius: 0; }
+  .product-specs__label { border-right: 0; }
+}
